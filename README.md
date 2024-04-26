@@ -31,7 +31,12 @@ Add here a sketch of your planning for the coming weeks. Please mention who does
 
     Explore current research + possible data sets (all) 
     -> Decide on a statistical method + data set (all)
-    -> 
+    -> .... 
+    -> Gaining our metric of bias in data 
+    -> Documenting the steps along the way (all)
+    -> Evaluation of obtained bias
+    -> Explanation/ summarizing the impact of bias in a report 
+    -> Relation to our (main) research question(s)
 
 * ###### Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
