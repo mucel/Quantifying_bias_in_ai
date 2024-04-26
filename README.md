@@ -1,5 +1,5 @@
 # Quantifying bias in AI 
-By Māra Učelniece, Michalina Loch, Ralfs Brurāns. 
+By Māra Učelniece, Michalina Loch, Ralfs Brutāns. 
 
 
 ##### Abstract
