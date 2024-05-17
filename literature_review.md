@@ -116,14 +116,14 @@ It also indicated some limitations to these assisted evaluations. as they also m
 
 BTERTology METHODS 
 
-Probing Classifiers 
-Visualisation 
-Input perturbation
+- Probing Classifiers 
+- Visualisation 
+- Input perturbation
     What is the base line inconsitency? 
     They measuremnts are task specific. 
 
-Masked Language Modeling task
-Nonce word task
-Model perplexity/surprisal 
+- Masked Language Modeling task
+- Nonce word task
+- Model perplexity/surprisal 
 
 
