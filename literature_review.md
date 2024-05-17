@@ -48,3 +48,10 @@ This more addresses the legal issues with bias in the USA, so not that useful bu
 Unmasking Bias —Assessing Fairness in Large Language Models
 https://medium.com/@arpitnarain/unmasking-bias-assessing-fairness-in-large-language-models-a722624e4483
 This article discussed three main methodologies for testing fairness. The first one is Bias Audit, which involves testing LLMs across varying demographic groups with calculating metrics regarding the errors. The second one is Counterfactual Testing, which involves changing the demographic information to see if there are variations in the outputs. The last one is Adversarial Testing, which involves tricking the models into reviling biases. This article also adresess the steps of how each approach can be done. Nonetheless, it suggest that one should use all methods to reduce the evaluators bias in testing the bias of the model. 
+
+Decoding LLM Performance: A Guide to Evaluating LLM Applications
+https://medium.com/@amagastya/decoding-llm-performance-a-guide-to-evaluating-llm-applications-e8d7939cafce 
+This article discussed how the evaluation of NLP has shaped our understanding of the LLMs, with a great visual timeline of the metrics, with also addressing their limitations. It also beautifully showed the evaluation methods that can be used in the image below. 
+![alt text](image.png)
+*"The tools we create to understand and generate language are simultaneously becoming the yardstick by which we measure their progress."* 
+It also indicated some limitations to these assisted evaluations. as they also might create (position, verbose, self-affinity) biases. Furthermore, they provide a guide to evaluating LLM applications. They concluded that the methods are still developing parallel to the developments in the models, so one can refine them as necessary. 
