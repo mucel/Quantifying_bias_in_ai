@@ -52,6 +52,6 @@ This article discussed three main methodologies for testing fairness. The first 
 Decoding LLM Performance: A Guide to Evaluating LLM Applications
 https://medium.com/@amagastya/decoding-llm-performance-a-guide-to-evaluating-llm-applications-e8d7939cafce 
 This article discussed how the evaluation of NLP has shaped our understanding of the LLMs, with a great visual timeline of the metrics, with also addressing their limitations. It also beautifully showed the evaluation methods that can be used in the image below. 
-![alt text](image.png)
+![https://miro.medium.com/v2/resize:fit:1400/format:webp/0*WeX8kL9rzziiZaL4](image.png)
 *"The tools we create to understand and generate language are simultaneously becoming the yardstick by which we measure their progress."* 
 It also indicated some limitations to these assisted evaluations. as they also might create (position, verbose, self-affinity) biases. Furthermore, they provide a guide to evaluating LLM applications. They concluded that the methods are still developing parallel to the developments in the models, so one can refine them as necessary. 
