@@ -4,7 +4,7 @@ By Māra Učelniece, Michalina Loch, Ralfs Brutāns.
 
 ##### Abstract
 
-Large Language Models are known for perpetuating if not amplifying the biases of society. 
+Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are do to the lack of universalizability of the methods. 
 
 .... 
 
