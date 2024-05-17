@@ -41,6 +41,58 @@ Big Data's Disparate Impact
 https://www.jstor.org/stable/24758720?sid=primo 
 This more addresses the legal issues with bias in the USA, so not that useful but the abstract can provide some inspo for our abstract. Plus it addresses how data discriminates so could help decide on the marginal group. 
 
+Towards detecting unanticipated bias in Large Language Models
+https://arxiv.org/pdf/2404.02650 
+This paper discussed an Uncertainty and an Explainability research methods to discover unanticipated biases in internal decision making processes of LLMs (nit analysing training data). They porvided a comprehensive analysis of various methods that could be used for this. 
+
+
+
+-----------------------------------------------------------------------
+Omer Antverg and Yonatan Belinkov. 2022. On the Pitfalls of Analyzing Individual Neurons in Language Models. arXiv preprint arXiv:2110.07483
+(August 2022). http://arxiv.org/abs/2110.07483
+
+Su Lin Blodgett, Solon Barocas, Hal Daumé III, and Hanna Wallach. 2020. Language (technology) is power: A critical survey of “bias” in NLP.
+In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, Online,
+5454–5476. https://doi.org/10.18653/v1/2020.acl-main.485
+
+Su Lin Blodgett, Gilsinia Lopez, Alexandra Olteanu, Robert Sim, and Hanna Wallach. 2021. Stereotyping Norwegian Salmon: An Inventory of
+Pitfalls in Fairness Benchmark Datasets. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th
+International Joint Conference on Natural Language Processing (Volume 1: Long Papers), Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli
+(Eds.). Association for Computational Linguistics, Online, 1004–1015. https://doi.org/10.18653/v1/2021.acl-long.81
+
+
+Tolga Bolukbasi, Kai-Wei Chang, James Zou, Venkatesh Saligrama, and Adam Kalai. 2016. Man is to Computer Programmer as Woman is to
+Homemaker? Debiasing Word Embeddings. arXiv:1607.06520 [cs.CL]
+ * this was more related to word embedding 
+
+Aylin Caliskan, Joanna J Bryson, and Arvind Narayanan. 2017. Semantics derived automatically from language corpora contain human-like biases.
+Science 356, 6334 (2017), 183–186. https://doi.org/10.1126/science.aal4230
+
+Isabel O. Gallegos, Ryan A. Rossi, Joe Barrow, Md Mehrab Tanjim, Sungchul Kim, Franck Dernoncourt, Tong Yu, Ruiyi Zhang, and Nesreen K.
+Ahmed. 2023. Bias and Fairness in Large Language Models: A Survey. arXiv preprint arXiv:2309.00770 (2023).
+
+
+Wei Guo and Aylin Caliskan. 2021. Detecting Emergent Intersectional Biases: Contextualized Word Embeddings Contain a Distribution of Humanlike Biases. In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society (Virtual Event, USA) (AIES ’21). Association for Computing
+Machinery, New York, NY, USA, 122–133. https://doi.org/10.1145/3461702.3462536
+
+Scott M. Lundberg and Su-In Lee. 2017. A unified approach to interpreting model predictions. In Advances in Neural Information Processing Systems,
+Vol. 30. Curran Associates, Inc
+
+Chandler May, Alex Wang, Shikha Bordia, Samuel R Bowman, and Rachel Rudinger. 2019. On measuring social biases in sentence encoders. In
+Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies,
+Volume 1 (Long and Short Papers). Association for Computational Linguistics, 622–628. https://doi.org/10.18653/v1/N19-1063
+
+Grégoire Montavon, Alexander Binder, Sebastian Lapuschkin, Wojciech Samek, and Klaus-Robert Müller. 2019. Layer-wise relevance propagation:
+an overview. Explainable AI: interpreting, explaining and visualizing deep learning (2019), 193–209.
+
+Moin Nadeem, Anna Bethke, and Siva Reddy. 2021. StereoSet: Measuring stereotypical bias in pretrained language models. In ACL.
+
+Jesutofunmi A. Omiye, Jenna C. Lester, Simon Spichak, Veronica Rotemberg, and Roxana Daneshjou. 2023. Large language models propagate
+race-based medicine. npj Digital Medicine 6, 195 (2023). https://doi.org/10.1038/s41746-023-00939-z
+
+Sahib Singh and Narayanan Ramakrishnan. 2023. Is ChatGPT Biased? A Review. https://osf.io/preprints/your-preprint-id Web.
+
+
 
 
 #### Secondary sources: 
