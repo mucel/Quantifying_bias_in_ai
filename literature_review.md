@@ -45,11 +45,12 @@ Towards detecting unanticipated bias in Large Language Models
 https://arxiv.org/pdf/2404.02650 
 This paper discussed an Uncertainty and an Explainability research methods to discover unanticipated biases in internal decision making processes of LLMs (nit analysing training data). They porvided a comprehensive analysis of various methods that could be used for this. 
 
+On the Pitfalls of Analyzing Individual Neurons in Language Models
+http://arxiv.org/abs/2110.07483
+
 
 
 -----------------------------------------------------------------------
-Omer Antverg and Yonatan Belinkov. 2022. On the Pitfalls of Analyzing Individual Neurons in Language Models. arXiv preprint arXiv:2110.07483
-(August 2022). http://arxiv.org/abs/2110.07483
 
 Su Lin Blodgett, Solon Barocas, Hal Daumé III, and Hanna Wallach. 2020. Language (technology) is power: A critical survey of “bias” in NLP.
 In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, Online,
@@ -107,3 +108,22 @@ This article discussed how the evaluation of NLP has shaped our understanding of
 ![Evaluation methods](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*WeX8kL9rzziiZaL4)
 *"The tools we create to understand and generate language are simultaneously becoming the yardstick by which we measure their progress."* 
 It also indicated some limitations to these assisted evaluations. as they also might create (position, verbose, self-affinity) biases. Furthermore, they provide a guide to evaluating LLM applications. They concluded that the methods are still developing parallel to the developments in the models, so one can refine them as necessary. 
+
+
+
+
+### More methods from lecture
+
+BTERTology METHODS 
+
+Probing Classifiers 
+Visualisation 
+Input perturbation
+    What is the base line inconsitency? 
+    They measuremnts are task specific. 
+
+Masked Language Modeling task
+Nonce word task
+Model perplexity/surprisal 
+
+
