@@ -4,11 +4,7 @@ By Māra Učelniece, Michalina Loch, Ralfs Brutāns.
 
 ##### Abstract
 
-Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are do to the lack of universalizability of the methods. This research will address the biases that aocur in one of the most popular at LLM at the moment - ChatGPT to asses the differences in steryotypical bias between language. The language that will be analnyzed is latvian, as there is little reserach regarding this and as two people out of this research are Latvians. 
-
-The method we want to use ...
-
-This method was chosen based on a literature review regarding various approaches. 
+Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are do to the lack of universalizability of the methods. This research will address the biases that aocur in one of the most popular at LLM at the moment - ChatGPT to asses the differences in steryotypical bias between language. The language that will be analnyzed is latvian, as there is little reserach regarding this and as two people out of this research are Latvians. The method we want to use is mainly promt probing. This method was chosen based on a literature review regarding various approaches. 
 
 ##### Research questions 
 A list of research questions you would like to address during the project.  
