@@ -45,6 +45,6 @@ This more addresses the legal issues with bias in the USA, so not that useful bu
 
 #### Secondary sources: 
 
- 
+Unmasking Bias —Assessing Fairness in Large Language Models
 https://medium.com/@arpitnarain/unmasking-bias-assessing-fairness-in-large-language-models-a722624e4483
-This is for methods
+This article discussed three main methodologies for testing fairness. The first one is Bias Audit, which involves testing LLMs across varying demographic groups with calculating metrics regarding the errors. The second one is Counterfactual Testing, which involves changing the demographic information to see if there are variations in the outputs. The last one is Adversarial Testing, which involves tricking the models into reviling biases. This article also adresess the steps of how each approach can be done. Nonetheless, it suggest that one should use all methods to reduce the evaluators bias in testing the bias of the model. 
