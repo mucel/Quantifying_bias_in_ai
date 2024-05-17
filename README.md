@@ -4,11 +4,15 @@ By Māra Učelniece, Michalina Loch, Ralfs Brutāns.
 
 ##### Abstract
 
-"The new regulatory framework proposal on Artificial Intelligence (AI) published by the European Commission establishes a new risk-based legal approach." (De Alcala et al.). This risk assessment will be addressing bias and the ways to evaluate and possibly mitigate them. In this work we apply statistical approaches to a .... data set, which is based on automatic decision making. 
+Large Language Models are known for perpetuating if not amplifying the biases of society. 
+
+.... 
+
+"The new regulatory framework proposal on Artificial Intelligence (AI) published by the European Commission establishes a new risk-based legal approach." (De Alcala et al.). This risk assessment will be addressing bias and the ways to evaluate and possibly mitigate them. In this work we apply statistical approaches to a Large Language Model data set, which is based on automatic decision making. 
 
 The method we want to use ...
 
-This method was chosen based on ... 
+This method was chosen based on a literature review regarding various approaches. 
 
 ##### Research questions 
 A list of research questions you would like to address during the project.  
@@ -24,6 +28,7 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
     Large Language Models:  
         BERT or ChatGPT 
 
+* Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
 
 ##### A tentative list of milestones for the project
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
