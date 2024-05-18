@@ -3,11 +3,11 @@
 #### Primary sources: 
 
 StereoSet: Measuring stereotypical bias in pretrained language models
-https://arxiv.org/pdf/2004.09456
-This paper they developed a Context Association Test to measure stereotypical biases of pertain LLMs, and they evaluated it with a new metric Idealized CAT score - measuring how close a model is to an idealistic model. They used SterioSet as their dataset, finding that ChatGPT exhibits more idealistic scores than other models such as BRET etc. They also released the dataset to the public. 
+https://arxiv.org/pdf/2004.09456        
+sThis paper they developed a Context Association Test to measure stereotypical biases of pertain LLMs, and they evaluated it with a new metric Idealized CAT score - measuring how close a model is to an idealistic model. They used SterioSet as their dataset, finding that ChatGPT exhibits more idealistic scores than other models such as BRET etc. They also released the dataset to the public. 
 
 Language (Technology) is Power: A Critical Survey of “Bias” in NLP  
-https://aclanthology.org/2020.acl-main.485.pdf
+https://aclanthology.org/2020.acl-main.485.pdf  
 They surveys almost 150 papers that analyzed bias in NLP, and came up wit three suggestions to analyzing bias: 
 (R1) Ground work analyzing “bias” in NLP systems in the relevant literature outside of NLP that explores the relationships between language and social hierarchies. Treat representational harms as harmful in their own right. 
 (R2) Provide explicit statements of why the system behaviors that are described as “bias” are harmful,l in what ways, and to whom. Be forthright about the normative reasoning (Green, 2019) underlying these statements. 
@@ -20,32 +20,32 @@ How do social hierarchies and language ideologies infuence the decisions made du
 ##### Not that usefull from promt probing : 
 
 DELPHI: Data for Evaluating LLMs’ Performance in Handling Controversial Issues
-https://arxiv.org/abs/2310.18130 
+https://arxiv.org/abs/2310.18130   
 This paper addressed the data set that was built for evaluating the systems performance from both the system and user perspective, by annotating controversial data. Concluding that smaller open-source models showed a concerning gap between larger (ChatGPT4). 
 They used the acknowledgement rate and the comprehensiveness rate.  
 
 Gender bias and stereotypes in Large Language Models
-https://arxiv.org/pdf/2308.14921
+https://arxiv.org/pdf/2308.14921  
 This paper addressed the gender bias in LLMs by building on WinoBias, which is a commonly used data set. They tested 4 LLMs published in 2023 to see that their method could be generalizable, but mainly for testing gender bias. Highlighting that the models are trained on imbalanced datasets, and with Reinforced Learning they reflect those imbalances to the user.
 
 What are the biases in my word embedding?
-https://arxiv.org/pdf/1812.08769
+https://arxiv.org/pdf/1812.08769  
 This paper provided a Unsupervised Bias Enumerations algorithm for quantifying bias in word embedding that outputs the association tests. 
 
 Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints 
-https://arxiv.org/pdf/1707.09457
+https://arxiv.org/pdf/1707.09457  
 In this paper they used comparisons of bias scores on unlabeled images to identify bias amplifications. Further, they proposed a RBA algorithm to reduce the bias amplifications.  
 
 “I’m sorry to hear that”: Finding New Biases in Language Models with a Holistic Descriptor Dataset
-https://aclanthology.org/2022.emnlp-main.625.pdf
+https://aclanthology.org/2022.emnlp-main.625.pdf  
 This paper used a HolisticBias as a bias measurement to uncover new biases in LLMs that they analyzed with three measurements: token likelihoods, generation bias, and an offensiveness classifier. They identified that Holistic Bias can detect and measure undetectable biases. 
 
 Big Data's Disparate Impact
-https://www.jstor.org/stable/24758720?sid=primo 
+https://www.jstor.org/stable/24758720?sid=primo   
 This more addresses the legal issues with bias in the USA, so not that useful but the abstract can provide some inspo for our abstract. Plus it addresses how data discriminates so could help decide on the marginal group. 
 
 Towards detecting unanticipated bias in Large Language Models
-https://arxiv.org/pdf/2404.02650 
+https://arxiv.org/pdf/2404.02650   
 This paper discussed an Uncertainty and an Explainability research methods to discover unanticipated biases in internal decision making processes of LLMs (nit analysing training data). They porvided a comprehensive analysis of various methods that could be used for this. 
 
 
