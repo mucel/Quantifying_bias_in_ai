@@ -2,6 +2,10 @@
 
 #### Primary sources: 
 
+###### Main papaer 
+
+https://arxiv.org/pdf/2312.03689
+
 StereoSet: Measuring stereotypical bias in pretrained language models
 https://arxiv.org/pdf/2004.09456        
 sThis paper they developed a Context Association Test to measure stereotypical biases of pertain LLMs, and they evaluated it with a new metric Idealized CAT score - measuring how close a model is to an idealistic model. They used SterioSet as their dataset, finding that ChatGPT exhibits more idealistic scores than other models such as BRET etc. They also released the dataset to the public. 
@@ -15,6 +19,13 @@ They surveys almost 150 papers that analyzed bias in NLP, and came up wit three 
 
 And some research question suggestions: 
 How do social hierarchies and language ideologies infuence the decisions made during the development and deployment lifecycle? What kinds of NLP systems do these decisions result in, and what kinds do they foreclose?  General assumptions: To which linguistic norms do NLP systems adhere (Bender, 2019; Ruane et al., 2019)? Which language practices are implicitly assumed to be standard, ordinary, correct, or appropriate?  Task defnition: For which speakers are NLP systems (and NLP resources) developed? (See Joshi et al. (2020) for a discussion.) How do task defnitions discretize the world? For example, how are social groups delineated when defning demographic attribute prediction tasks (e.g., Koppel et al., 2002; Rosenthal and McKeown, 2011; Nguyen et al., 2013)? What about languages in native language prediction tasks (Tetreault et al., 2013)?  Data: How are datasets collected, preprocessed, and labeled or annotated? What are the impacts of annotation guidelines, annotator assumptions and perceptions (Olteanu et al., 2019; Sap et al., 2019; Geiger et al., 2020), and annotation aggregation processes (Pavlick and Kwiatkowski, 2019)?  Evaluation: How are NLP systems evaluated? What are the impacts of evaluation metrics (Olteanu et al., 2017)? Are any non-quantitative evaluations performed? . How do NLP systems reproduce or transform language ideologies? Which language varieties or practices come to be deemed good or bad? Might “good” language simply mean language that is easily handled by existing NLP systems? For example, linguistic phenomena arising from many language practices (Eisenstein, 2013) are described as “noisy text” and often viewed as a target for “normalization.” How do the language ideologies that are reproduced by NLP systems maintain social hierarchies? . Which representational harms are being measured or mitigated? Are these the most normatively concerning harms, or merely those that are well handled by existing algorithmic fairness techniques? Are there other representational harms that might be analyzed? 
+
+Take Care of Your Prompt Bias! Investigating and Mitigating Prompt
+Bias in Factual Knowledge Extraction
+https://arxiv.org/pdf/2403.09963v1 
+This paper is about investigating and mitigating promt bias in factual knowledge tasks leading to overfitting in LLMs. It proposed debiasing through a representation-based method effectively improves benchmark accuracy by mitigating prompt bias. Focusing on the importance of addressing bias for performance enhancement.
+
+
 
 
 ##### Not that usefull from promt probing : 
@@ -49,8 +60,7 @@ https://arxiv.org/pdf/2404.02650
 This paper discussed an Uncertainty and an Explainability research methods to discover unanticipated biases in internal decision making processes of LLMs (nit analysing training data). They porvided a comprehensive analysis of various methods that could be used for this. 
 
 
------------------------------------------------------------------------
-
+----------------------------------------------------------------------
 Su Lin Blodgett, Solon Barocas, Hal Daumé III, and Hanna Wallach. 2020. Language (technology) is power: A critical survey of “bias” in NLP.
 In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, Online,
 5454–5476. https://doi.org/10.18653/v1/2020.acl-main.485
@@ -79,6 +89,10 @@ Sahib Singh and Narayanan Ramakrishnan. 2023. Is ChatGPT Biased? A Review. https
 
 
 #### Secondary sources: 
+
+Factual Knowledge Probing in Pretrained Language Models
+https://lukovnikov.medium.com/factual-knowledge-probing-in-pretrained-language-models-4c52f6c79fc3 
+X-FACTR: Multilingual Factual Knowledge Retrieval from PLM (Jiang et al. 2020): this paper addressed accuracy in various different languages, impacts on factual knowledge and the overlaps between language. Showing that English has a higher accuracy on new tasks. 
 
 Unmasking Bias —Assessing Fairness in Large Language Models
 https://medium.com/@arpitnarain/unmasking-bias-assessing-fairness-in-large-language-models-a722624e4483
