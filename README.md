@@ -4,11 +4,11 @@ By Māra Učelniece, Michalina Loch, Ralfs Brutāns.
 
 ##### Abstract
 
-Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are do to the lack of universalizability of the methods. This research will address the biases that accur in one of the most popular at LLM at the moment - ChatGPT to asses the differences in steryotypical bias between language. The language that will be analnyzed is latvian, as there is little reserach regarding this and as two people out of this research are Latvians. The method we want to use is mainly promt probing. This method was chosen based on a literature review regarding various approaches. 
+Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are due to the lack of universalizability of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT to assess the differences in stereotypical bias between language. The language that will be analysed is latvian, as there is little research regarding this and as two people out of this research are Latvians. The method we want to use is mainly prompt probing. This method was chosen based on a literature review regarding various approaches. 
 
-We would analyse ChatGPT-4o with promts to analyse steriotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact promts that were used to investigate biases. 
+We would analyse ChatGPT-4o with prompts to analyse stereotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact prompts that were used to investigate bias
 
-Possibly cross validation between the prompts to analayse the 
+Possibly cross validation between the prompts to analyse the 
 differences. 
 
 ##### Research questions 
