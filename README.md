@@ -10,12 +10,14 @@ Large Language Models are known for perpetuating if not amplifying the biases of
 A list of research questions you would like to address during the project.  
 
     What are the variations in steryotipcal biases such as gender, race, ethnicity in a compertively small spread language? 
+    To what extent [a specific language model / a variety of popular models] show a difference in bias when encountering prompts in different languages?
 
 ##### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
     Large Language Models:  
-        ChatGPT 
+        ChatGPT (OpenAI)
+        Gemini (Google)
 
 * Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
 
