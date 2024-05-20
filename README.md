@@ -14,13 +14,14 @@ differences.
 ##### Research questions 
 A list of research questions you would like to address during the project.  
 
-    What are the variations in steryotipcal biases such as gender, race, ethnicity in a marginal language? 
+    To what extent [a specific language model / a variety of popular models] show a difference in bias when encountering prompts in different languages?
 
 ##### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
     Large Language Models:  
-        ChatGPT 
+        ChatGPT (OpenAI)
+        Possibly open-source models:  Gemini (Google)  BLOOM(BigScience)  LLaMA2(Meta)   
 
 * Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
 
@@ -41,5 +42,5 @@ Add here a sketch of your planning for the coming weeks. Please mention who does
 ##### Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
 
-At the moment our repo only contains our chosen license and the readme file, and the literature review files. 
+At the moment our repo only contains our chosen license and the readme file, the literature review files, report, and the sheet for prompts. We are working on translating the prompts and working on the report with still ongoing research being made. 
 
