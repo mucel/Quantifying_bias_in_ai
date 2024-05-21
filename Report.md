@@ -7,7 +7,13 @@ A 4-page, double-column PDF report (4 pages excluding references), following a s
 ## Introduction
 ....
 
+##  Background and Experimental Setup
+...
+
 ## Method
+...
+
+## Prompt Biases 
 ...
 
 ## Discussion 
@@ -15,6 +21,5 @@ A 4-page, double-column PDF report (4 pages excluding references), following a s
 
 ## Conclusion 
 ...
-
 
 
