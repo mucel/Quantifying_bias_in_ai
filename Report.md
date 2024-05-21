@@ -15,8 +15,8 @@ As LLMs are becoming more increasingly used in everyday life. There has arisen a
 
 In hopes of answering the question : to what extent ChatGPT - 4o, Gemini, BLOOM, LLaMA2 show a difference in bias when encountering prompts in different languages?
 
+The main focus is on ChatGPT as research using Context Association Tests to measure stereotypical biases by comparing how a model compares to an idealistic model showed that ChatGPT compared to other models exhibited more idealistic scores (Nadeem et al., 2020). Furthermore, this is the hottest topic at the moment has been analysing ChatGPT, which was the first to come out and the fastest company to gain a million users in a day. However, this company keeps growing both in users and its products. Just a few days ago OpenAI launched their newest model of ChatGPT that includes more languages as the company strives for accessibility.  
 
-The hottest topic at the moment has been analysing ChatGPT, which was the first to come out and the fastest company to gain a million users in a day. However, this company keeps growing both in users and its products. Just a few days ago OpenAI launched their newest model of ChatGPT that includes more languages as the company strives for accessibility. 
 
 
 
@@ -25,12 +25,21 @@ The hottest topic at the moment has been analysing ChatGPT, which was the first 
 
 ## Method
 ...
+Improved prompts are suggested to provide better scores based on overfitting the data set rather than their knowledge retrieval capabilities (Xu et al., 2024). 
+
 
 ## Prompt Biases 
 ...
 
+A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
+
 ## Discussion 
 ...
+
+#### Mitigating bias 
+
+* Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
+
 
 ## Conclusion 
 ...
