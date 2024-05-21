@@ -39,8 +39,9 @@ Probing via Prompting
 https://aclanthology.org/2022.naacl-main.84.pdf
 This paper proposed a new model-free approach to use probing as a prompting task, as to not analyse what the model learns through probing after conducting an empirical experiment to show that the properties are encoded. Suggesting that these model-free methods are useful for identifying embedded linguistic properties. 
 
-
-
+Manual Prompt Generation For Language Model Probing
+https://ceur-ws.org/Vol-3274/paper6.pdf 
+This paper 
 
 
 ##### Not that useful for prompt probing :
