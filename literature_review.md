@@ -28,11 +28,17 @@ How do social hierarchies and language ideologies influence the decisions made d
 Take Care of Your Prompt Bias! Investigating and Mitigating Prompt
 Bias in Factual Knowledge Extraction
 https://arxiv.org/pdf/2403.09963v1
-This paper is about investigating and mitigating promt bias in factual knowledge tasks leading to overfitting in LLMs. It proposed debiasing through a representation-based method effectively improves benchmark accuracy by mitigating prompt bias. Focusing on the importance of addressing bias for performance enhancement.
+This paper is about investigating and mitigating prompt bias in factual knowledge tasks leading to overfitting in LLMs. It proposed debiasing through a representation-based method effectively improves benchmark accuracy by mitigating prompt bias. Focusing on the importance of addressing bias for performance enhancement.
+
+Can Prompt Probe Pretrained Language Models? Understanding the
+Invisible Risks from a Causal View
+https://arxiv.org/pdf/2203.12258
+This paper assessed biases that relate to prompt probing suggesting a causal analysis framework and a focus on theoretical not empirical analyses are better to reduce them. They also suggested that the distinction between what one is investigating is essential to the analysis.  
 
 
 
-##### Not that usefull from promt probing :
+
+##### Not that useful for prompt probing :
 
 
 DELPHI: Data for Evaluating LLMs’ Performance in Handling Controversial Issues
@@ -53,7 +59,7 @@ This paper provided a Unsupervised Bias Enumerations algorithm for quantifying b
 
 Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints
 https://arxiv.org/pdf/1707.09457  
-In this paper they used comparisons of bias scores on unlabeled images to identify bias amplifications. Further, they proposed a RBA algorithm to reduce the bias amplifications.  
+In this paper they used comparisons of bias scores on unlaabeled images to identify bias amplifications. Further, they proposed a RBA algorithm to reduce the bias amplifications.  
 
 
 “I’m sorry to hear that”: Finding New Biases in Language Models with a Holistic Descriptor Dataset
@@ -74,16 +80,11 @@ This paper discussed an Uncertainty and an Explainability research methods to di
 
 
 ----------------------------------------------------------------------
-Su Lin Blodgett, Solon Barocas, Hal Daumé III, and Hanna Wallach. 2020. Language (technology) is power: A critical survey of “bias” in NLP.
-In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, Online,
-5454–5476. https://doi.org/10.18653/v1/2020.acl-main.485
-
 
 Su Lin Blodgett, Gilsinia Lopez, Alexandra Olteanu, Robert Sim, and Hanna Wallach. 2021. Stereotyping Norwegian Salmon: An Inventory of
 Pitfalls in Fairness Benchmark Datasets. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th
 International Joint Conference on Natural Language Processing (Volume 1: Long Papers), Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli
 (Eds.). Association for Computational Linguistics, Online, 1004–1015. https://doi.org/10.18653/v1/2021.acl-long.81
-
 
 
 
@@ -98,18 +99,7 @@ Ahmed. 2023. Bias and Fairness in Large Language Models: A Survey. arXiv preprin
 Scott M. Lundberg and Su-In Lee. 2017. A unified approach to interpreting model predictions. In Advances in Neural Information Processing Systems,
 Vol. 30. Curran Associates, Inc
 
-
-Grégoire Montavon, Alexander Binder, Sebastian Lapuschkin, Wojciech Samek, and Klaus-Robert Müller. 2019. Layer-wise relevance propagation:
-an overview. Explainable AI: interpreting, explaining and visualizing deep learning (2019), 193–209.
-
-
-Moin Nadeem, Anna Bethke, and Siva Reddy. 2021. StereoSet: Measuring stereotypical bias in pretrained language models. In ACL.
-
-
-Sahib Singh and Narayanan Ramakrishnan. 2023. Is ChatGPT Biased? A Review. https://osf.io/preprints/your-preprint-id Web.
-
-
-
+-------------------------------------------------------------------
 
 #### Secondary sources:
 
