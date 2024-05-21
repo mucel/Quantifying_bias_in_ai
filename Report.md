@@ -2,7 +2,7 @@
 A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions), if it contains all relevant contents, and how solid the results are.
 
 ## Abstract 
-Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are due to the lack of universalizability of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT to assess the differences in stereotypical bias between language. The language that will be analysed is latvian, as there is little research regarding this and as two people out of this research are Latvians. The method we want to use is mainly prompt probing. This method was chosen based on a literature review regarding various approaches. 
+Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are due to the lack of universalizability of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT to assess the differences in stereotypical bias between language. The language that will be analysed is latvian, as there is little research regarding this and as two people out of this research are Latvians. The method we want to use is mainly prompt probing, which is one of the most popular methods for evaluating task specific tasks. This method was chosen based on a literature review regarding various approaches. 
 
 We would analyse ChatGPT-4o with prompts to analyse stereotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact prompts that were used to investigate bias
 
@@ -51,3 +51,11 @@ Reinforcement Learning regarding the mitigation of biases is quite interesting i
 
 
 
+
+### References 
+References Cao, B., Lin, H., Han, X., Liu, F., & Sun, L. (2022). Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View. https://arxiv.org/pdf/2203.12258Kotek  
+H., Dockum, R., & Sun, D. (2023). Gender bias and stereotypes in Large Language Models. Proceedings of the ACM Collective Intelligence Conference. https://doi.org/10.1145/3582269.3615599Nadeem   
+M., Bethke, A., & Reddy, S. (2020). StereoSet: Measuring stereotypical bias in pretrained language models. https://arxiv.org/pdf/2004.09456Sun   
+D. Q., Abzaliev, A., Kotek, H., Xiu, Z., Klein, C., & Williams, J. D. (2023, November 7). DELPHI: Data for Evaluating LLMs’ Performance in Handling Controversial Issues. ArXiv.org. https://doi.org/10.48550/arXiv.2310.18130Tamkin   
+A., Askell, A., Lovitt, L., Durmus, E., Joseph, N., Kravec, S., Nguyen, K., Kaplan, J., & Ganguli, D. (2023). Evaluating and Mitigating Discrimination in Language Model Decisions. In  arXiv.org. https://doi.org/10.48550/arxiv.2312.03689Xu   
+Z., Peng, K., Ding, L., Tao, D., & Lu, X. (2024). Take Care of Your Prompt Bias! Investigating and Mitigating Prompt Bias in Factual Knowledge Extraction. https://arxiv.org/pdf/2403.09963v1
