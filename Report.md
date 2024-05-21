@@ -19,11 +19,14 @@ The main focus is on ChatGPT as research using Context Association Tests to meas
 
 
 
-
 ##  Background and Experimental Setup
 ...
 
+
 ## Method
+#### Theoretical background 
+#### Experimental setup 
+
 ...
 Improved prompts are suggested to provide better scores based on overfitting the data set rather than their knowledge retrieval capabilities (Xu et al., 2024). 
 
@@ -31,17 +34,20 @@ Improved prompts are suggested to provide better scores based on overfitting the
 ## Prompt Biases 
 ...
 
-A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
+Prompt probing as a method in itself can be inconsistent and unreliable, so the Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias are taken into account  to make our evaluation of the results more reliable (Cao et al., 2022). 
+
 
 ## Discussion 
 ...
 
 #### Mitigating bias 
+A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
-* Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
+Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
 
 
 ## Conclusion 
 ...
+
 
 
