@@ -35,6 +35,11 @@ Invisible Risks from a Causal View
 https://arxiv.org/pdf/2203.12258
 This paper assessed biases that relate to prompt probing suggesting a causal analysis framework and a focus on theoretical not empirical analyses are better to reduce them. They also suggested that the distinction between what one is investigating is essential to the analysis.  
 
+Probing via Prompting
+https://aclanthology.org/2022.naacl-main.84.pdf
+This paper proposed a new model-free approach to use probing as a prompting task, as to not analyse what the model learns through probing after conducting an empirical experiment to show that the properties are encoded. Suggesting that these model-free methods are useful for identifying embedded linguistic properties. 
+
+
 
 
 
