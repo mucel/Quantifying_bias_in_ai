@@ -1,6 +1,12 @@
 # Report 
 A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions), if it contains all relevant contents, and how solid the results are.
 
+
+### Author contributions:
+Mara: literature review, writing the introduction and the abstract
+Michalina: formulating the research question, choosing the study design and methodology
+Ralfs: translations of prompts into Latvian
+
 ## Abstract 
 Large Language Models are known for perpetuating, if not amplifying, the biases of society, but often the issues with analysing them are due to the lack of universalizability (???) of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT, to assess the differences in stereotypical bias between two languages. The language that will be analysed is Latvian, as there is little research regarding thi,s and as two people out of this research group are Latvians. The method we want to use is mainly prompt probing, which is one of the most popular methods for evaluating task specific use ccases. This method was chosen based on a literature review regarding various approaches. 
 
