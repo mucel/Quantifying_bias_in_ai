@@ -42,6 +42,8 @@ We will employ ChatGPT4o to evaluate the translated prompts and output a yes/no 
 
 
 The primary algorithm used will be the built-in processing capabilities of ChatGPT4o. We will not be modifying the internal algorithms of the model itself. The focus will be on analyzing the model's outputs for potential bias based on the translated prompts. Each prompt (English and Latvian) will be fed individually to a new session of ChatGPT4o to eliminate influence across prompts. 
+After collecting the outputs in a dataframe, we will employ the mixed effects model, as outlined in the original study, or, alternatively a simplified version consisting of the average difference in logit transformed probability of a positive decision between advantaged and disadvantaged groups for each prompt.
+Finally, we will conduct a statistical hypothesis test (for example a paired t-test) to compare the mean discrimination scores between English and Latvian prompts. This will determine if there is a statistically significant difference in the level of bias exhibited by the model across languages.
 
 ## Prompt Biases 
 ...
