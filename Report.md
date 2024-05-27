@@ -2,14 +2,14 @@
 A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions), if it contains all relevant contents, and how solid the results are.
 
 
-## Abstract 
+## Abstract (300 words)
 Large Language Models are known for perpetuating, if not amplifying, the biases of society, but often the issues with analysing them are due to the lack of universalizability (???) of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT, to assess the differences in stereotypical bias between two languages. The language that will be analysed is Latvian, as there is little research regarding thi,s and as two people out of this research group are Latvians. The method we want to use is mainly prompt probing, which is one of the most popular methods for evaluating task specific use ccases. This method was chosen based on a literature review regarding various approaches. 
 
 We would analyse ChatGPT-4o with prompts acquired from to Tamkin et al. (2023), with an aim to analyse stereotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact prompts used.
 
 
 
-## Introduction
+## Introduction (500 words)
 
 As LLMs are becoming more increasingly used in everyday life. There has arisen a need[??] to detect and mitigate biases. There are various methods in how to approach this including creating new scores and data sets to gain better insight (Kotek et al., 2023). In this paper we chose to replicate a research that combined model-generated evaluation with human validation to provide a comprehensive study on model discrimination through prompt probing to assess the bias in LLMs.
 
@@ -20,10 +20,8 @@ In hopes of answering the question : to what extent ChatGPT-4o (and/or alternati
 They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 
-##  Background and Experimental Setup
 
-
-## Method
+## Method (1500 words)
 As prompt probing exibits biases a simpler method has been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
 
 
@@ -45,22 +43,27 @@ The primary algorithm used will be the built-in processing capabilities of ChatG
 After collecting the outputs in a dataframe, we will employ the mixed effects model, as outlined in the original study, or, alternatively a simplified version consisting of the average difference in logit transformed probability of a positive decision between advantaged and disadvantaged groups for each prompt.
 Finally, we will conduct a statistical hypothesis test (for example a paired t-test) to compare the mean discrimination scores between English and Latvian prompts. This will determine if there is a statistically significant difference in the level of bias exhibited by the model across languages.
 
-## Prompt Biases 
+## Prompt Biases (500 words)
 ...
 
 Prompt probing as a method in itself can be inconsistent and unreliable, so the Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias are taken into account  to make our evaluation of the results more reliable (Cao et al., 2022). 
 
 
-## Discussion 
-...
+## Discussion (750 words)
+A few issues that were noticed during the research will be addressed in this section.
 
-#### Mitigating bias 
+### Limitations of the experiment. 
+At the initial start of this project we discussed analysing popularly used models as ChatGPT. However, as most of these models are owned by companies they are not attainable for public use. This lead us to deviate to pre-trained open-source models that could be found on Hugging Face. 
+
+The evaluation of the prompts was only done by two bachelor students that are native speakers, who are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
+
+#### Mitigating bias (300 words)
 A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
 Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
 
 
-## Conclusion 
+## Conclusion (150 words)
 ...
 
 
