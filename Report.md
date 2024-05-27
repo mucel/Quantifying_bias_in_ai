@@ -17,6 +17,7 @@ In hopes of answering the question : to what extent ChatGPT - 4o, Gemini, BLOOM,
 
 The main focus is on ChatGPT as research using Context Association Tests to measure stereotypical biases by comparing how a model compares to an idealistic model showed that ChatGPT compared to other models exhibited more idealistic scores (Nadeem et al., 2020). Furthermore, this is the hottest topic at the moment has been analysing ChatGPT, which was the first to come out and the fastest company to gain a million users in a day. However, this company keeps growing both in users and its products. Just a few days ago OpenAI launched their newest model of ChatGPT that includes more languages as the company strives for accessibility.  Nonetheless, there is a wide gap between smaller open-source models and larger ones based on the systems performance from both the system and user perspective, which could be explored further (Sun et al., 2023). 
 
+They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 
 ##  Background and Experimental Setup
@@ -24,6 +25,10 @@ The main focus is on ChatGPT as research using Context Association Tests to meas
 
 
 ## Method
+As prompt probing exibits biases a simpler method has been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
+
+
+
 #### Theoretical background 
 #### Experimental setup 
 
