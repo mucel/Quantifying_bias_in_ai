@@ -52,12 +52,13 @@ Prompt probing as a method in itself can be inconsistent and unreliable, so the 
 ## Discussion (750 words)
 A few issues that were noticed during the research will be addressed in this section.
 
-### Limitations of the experiment. 
+#### Limitations of the experiment. 
 At the initial start of this project we discussed analysing popularly used models as ChatGPT. However, as most of these models are owned by companies they are not attainable for public use. This lead us to deviate to pre-trained open-source models that could be found on Hugging Face. 
 
 The evaluation of the prompts was only done by two bachelor students that are native speakers, who are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
 
-#### Mitigating bias (300 words)
+
+### Mitigating bias (300 words)
 A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
 Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
