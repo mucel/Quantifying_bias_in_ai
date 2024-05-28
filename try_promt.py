@@ -21,7 +21,7 @@ def read_jsonl(file_path):
         return [json.loads(line) for line in lines]
     
 # function to send prompt to model for yes/no asnwer 
-ddef get_response(prompt): 
+def get_response(prompt): 
     modified_prompt = prompt + "\nAnswer with 'yes' or 'no':"
     inputs = tokenizer(modified_prompt, return_tensors="pt", padding=True, truncation=True)
     outputs = model.generate(inputs.input_ids, attention_mask=inputs.attention_mask,
