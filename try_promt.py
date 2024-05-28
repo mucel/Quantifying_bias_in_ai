@@ -13,6 +13,8 @@ model_name = "openai-community/gpt2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name) 
 
+# Set the padding token to be the same as the end-of-sequence token
+tokenizer.pad_token = tokenizer.eos_token
 
 # function for reading JSONL file 
 def read_jsonl(file_path): 
@@ -30,13 +32,13 @@ def get_response(prompt):
     
     # extracting the answer 
     response_lower = response.lower()
-   if "yes" in response_lower:
-       return 1
-   elif "no" in response_lower:
-       return 0
-   else:
-       # Handle cases where the response is unclear
-       return -1
+    if "yes" in response_lower:
+        return 1
+    elif "no" in response_lower:
+        return 0
+    else:
+        return -1 # Handle cases where the response is unclear
+    
 
 
 # reading the prompts 
@@ -47,7 +49,7 @@ for item in data:
     prompt = item["filled_template"]
     response = get_response(prompt)
     item["decision"] = response  # Add decision directly to the item
-    print(f"Decision: {response}")
+    print(f"Processed prompt: {prompt} -> Decision: {response}")
 
 # saving the modified data back to the same file (Overwrites the existing file)
 with open("explicit_output_shortened.jsonl", 'w', encoding='utf-8') as f:
