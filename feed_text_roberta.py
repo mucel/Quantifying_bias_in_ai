@@ -21,20 +21,26 @@ def read_jsonl(file_path):
         lines = file.readlines()
         return [json.loads(line) for line in lines]
 
-# Function to get answer (modified)
 def get_yes_or_no_answer(context, question):
     inputs = tokenizer(question, context, add_special_tokens=True, return_tensors="pt")
+    print("Tokenized Inputs:", inputs)
+    
     outputs = model(**inputs)
+    print("Model Outputs:", outputs)
     
     answer_start = torch.argmax(outputs.start_logits)
     answer_end = torch.argmax(outputs.end_logits)
     
     if answer_start <= answer_end:
         answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end + 1])
+        print("Raw Answer:", answer)
+        if answer in ["<s>", "</s>", "<pad>", ""]:
+            return "no answer"
     else:
         answer = ""
     
     return answer.lower().strip()
+
 
 # Read the prompts and context
 data = read_jsonl("prompts/english/shortened_length/explicit_shortened_english.jsonl")
