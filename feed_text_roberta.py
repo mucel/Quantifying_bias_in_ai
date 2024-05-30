@@ -51,7 +51,9 @@ def get_yes_or_no_answer(text):
 
 
 # Read the prompts and context (assuming your JSONL has "text" field)
-data = read_jsonl("explicit_shortened.jsonl")
+data = read_jsonl(
+    "prompts/english/shortened_length/explicit_shortened_english.jsonl"
+)
 
 # Process the prompts for answers
 for item in data:
@@ -60,7 +62,7 @@ for item in data:
     item["answers"] = answer  # Add answer to the item
 
 # Save the modified data back to the same file
-with open("explicit_shortened.jsonl", "w", encoding="utf-8") as f:
+with open("output/exp_eng_short.jsonl", "w", encoding="utf-8") as f:
     for item in data:
         json.dump(item, f, ensure_ascii=False)
         f.write("\n")
