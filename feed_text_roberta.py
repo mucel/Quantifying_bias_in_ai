@@ -33,7 +33,7 @@ def get_yes_or_no_answer(text):
     )  # Last sentence
 
     inputs = tokenizer(
-        question, context
+        question, context, add_special_tokens=True, return_tensors="pt"
     )
     outputs = model(**inputs)
 
@@ -47,7 +47,7 @@ def get_yes_or_no_answer(text):
     else:
         return "no"
     """
-    return answer
+    return answer.lower
 
 
 # Read the prompts and context (assuming your JSONL has "text" field)
