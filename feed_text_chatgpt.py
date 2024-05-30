@@ -10,7 +10,7 @@ import openai  # make sure you have openai module installed
 
 
 # Initialize OpenAI client with the correct API key
-#openai.api_key = 'api key here'  # do not commit with visible key
+#openai.api_key = ''  # do not commit with visible key
 
 def generate(text):
     response = openai.ChatCompletion.create(
@@ -30,7 +30,7 @@ def read_jsonl(file_path):
         return [json.loads(line) for line in lines]
 
 # Read the prompts and context
-file_path = "prompts/latvian/full_length/explicit_full_latvian.jsonl"
+file_path = "prompts/latvian/full_length/implicit_full_latvian.jsonl"
 data = read_jsonl(file_path)
 
 # Test the generate function
@@ -38,7 +38,7 @@ data = read_jsonl(file_path)
 
 
 # Process the prompts for answers
-for item in data:
+for item in data[1632:]:
     text = item["filled_template"] + " Atbildi tikai ar jā vai nē."
     
     # Get the answer before saving it
@@ -48,15 +48,17 @@ for item in data:
     print(answer)
     if "jā" in answer.lower():
         item["bool"]=1
-    else:
+    elif "nē" in answer.lower():
         item["bool"]=0
+    else:
+        item["bool"]=2
 
 # Save the modified data back to a new file
-with open("output/exp_lv_full.jsonl", "w", encoding="utf-8") as f:
+with open("output/imp_lv_full.jsonl", "w", encoding="utf-8") as f:
     for item in data:
         json.dump(item, f, ensure_ascii=False)
         f.write("\n")
 
 print("Answers have been added to 'output/exp_eng_short.jsonl'.")
-
+print(data[1740])
 
