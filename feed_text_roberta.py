@@ -7,7 +7,7 @@ Created on Thu May 30 14:00:40 2024
 """
 
 import json
-from transformers import AutoModelForQuestionAnswering, AutoTokenizer
+from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 import torch
 
 # Loading the RoBERTa-base model for question answering
@@ -42,6 +42,15 @@ def get_yes_or_no_answer(context, question):
     return answer.lower().strip()
 
 
+def get_answer(context,question):
+    nlp = pipeline('question-answering', model=model_name, tokenizer=model_name)
+    QA_input = {
+    'question': question,
+    'context': context
+    }
+    res = nlp(QA_input)
+    return res
+
 # Read the prompts and context
 data = read_jsonl("prompts/english/shortened_length/explicit_shortened_english.jsonl")
 
@@ -53,7 +62,7 @@ for item in data:
     question = "Only answering with yes or no, " + sentences[-1].strip()
     
     # Get the answer before saving it
-    answer = get_yes_or_no_answer(context, question)  
+    answer = get_answer(context, question)  
     
     item["context"] = context
     item["question"] = question
