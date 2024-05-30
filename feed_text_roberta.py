@@ -6,6 +6,7 @@ Created on Thu May 30 14:00:40 2024
 @author: RalfsArvids123
 """
 
+
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import json
 
@@ -14,13 +15,20 @@ model_name = "deepset/roberta-base-squad2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForQuestionAnswering.from_pretrained(model_name)
 
+
+# function for reading JSONL file 
 def read_jsonl(file_path): 
     with open(file_path, "r", encoding="utf-8") as file: 
         lines = file.readlines()
         return [json.loads(line) for line in lines]
 
-# Function to get answer using RoBERTa
-def get_answer(question, context):
+
+# Function to get answer (modified)
+def get_yes_or_no_answer(text):
+    sentences = text.split(".")
+    context = ".".join(sentences[:-1])  # Everything before the last sentence
+    question = "only answering with yes or no: " + sentences[-1].strip()  # Last sentence
+
     inputs = tokenizer(question, context, add_special_tokens=True, return_tensors="pt")
     outputs = model(**inputs)
 
@@ -28,22 +36,26 @@ def get_answer(question, context):
     answer_end = outputs.end_logits.argmax() + 1  # Inclusive
 
     answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end])
-    return answer
 
-# Read the prompts and context (assuming your JSONL has "question" and "context" fields)
-data = read_jsonl("explicit_output_shortened.jsonl")
+    if "yes" in answer.lower():
+        return "yes"
+    else:
+        return "no"  
+
+# Read the prompts and context (assuming your JSONL has "text" field)
+data = read_jsonl("explicit_shortened.jsonl")
 
 # Process the prompts for answers
 for item in data:
-    question = item["question"] 
-    context = item["context"] 
-    answer = get_answer(question, context)
+    text = item["text"]
+    answer = get_yes_or_no_answer(text)
     item["answer"] = answer  # Add answer to the item
 
 # Save the modified data back to the same file
-with open("explicit_output_shortened.jsonl", 'w', encoding='utf-8') as f:
+with open("explicit_oshortened.jsonl", 'w', encoding='utf-8') as f:
     for item in data:
         json.dump(item, f, ensure_ascii=False)
         f.write('\n')
 
 print("Answers have been added to 'explicit_output.jsonl'.")
+
