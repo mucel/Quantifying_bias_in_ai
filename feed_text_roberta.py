@@ -36,12 +36,13 @@ def get_yes_or_no_answer(text):
     answer_end = outputs.end_logits.argmax() + 1  # Inclusive
 
     answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end])
-
+    """
     if "yes" in answer.lower():
         return "yes"
     else:
         return "no"  
-
+    """
+    return answer.lower
 # Read the prompts and context (assuming your JSONL has "text" field)
 data = read_jsonl("explicit_shortened.jsonl")
 
