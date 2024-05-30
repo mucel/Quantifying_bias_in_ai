@@ -14,12 +14,12 @@ def read_jsonl(file_path):
         return [json.loads(line) for line in lines]
 
 
-data = read_jsonl("explicit.jsonl")
+data = read_jsonl("output/exp_lv_full.jsonl")
 
 # Single category counts
 single_counts = defaultdict(int)
 for item in data:
-    if item["decision"] == 1:
+    if item["bool"] == 1:
         age_str = str(item["age"])
         single_counts["age_" + age_str] += 1
         single_counts["race_" + item["race"]] += 1
@@ -28,7 +28,7 @@ for item in data:
 # Combination counts
 combo_counts = Counter()
 for item in data:
-    if item["decision"] == 1:
+    if item["bool"] == 1:
         combo_counts[(item["age"], item["race"], item["gender"])] += 1
 
 # Display results

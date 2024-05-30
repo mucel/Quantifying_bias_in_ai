@@ -10,7 +10,7 @@ import openai  # make sure you have openai module installed
 
 
 # Initialize OpenAI client with the correct API key
-#openai.api_key = 'api key here'  # Use environment variable for API key
+#openai.api_key = 'api key here'  # do not commit with visible key
 
 def generate(text):
     response = openai.ChatCompletion.create(
