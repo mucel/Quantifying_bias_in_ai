@@ -47,7 +47,7 @@ def get_yes_or_no_answer(text):
     else:
         return "no"
     """
-    return answer.lower
+    return answer
 
 
 # Read the prompts and context (assuming your JSONL has "text" field)
