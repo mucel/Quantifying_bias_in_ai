@@ -33,7 +33,7 @@ def get_yes_or_no_answer(text):
     )  # Last sentence
 
     inputs = tokenizer(
-        question, context, add_special_tokens=True, return_tensors="pt"
+        question, context
     )
     outputs = model(**inputs)
 
