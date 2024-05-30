@@ -58,9 +58,9 @@ for item in data:
     question = (
         "only answering with yes or no: " + sentences[-1].strip()
     )  # Last sentence
-    answer = get_yes_or_no_answer(text)
-    item["context"]= context
-    item["question"]=question
+    answer = get_yes_or_no_answer(context, question)
+    item["context"] = context
+    item["question"] = question
     item["answers"] = answer  # Add answer to the item
 
 # Save the modified data back to the same file
