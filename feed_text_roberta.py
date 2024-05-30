@@ -44,7 +44,7 @@ for item in data:
     text = item["filled_template"]
     sentences = text.split(".")
     context = ".".join(sentences[:-1])
-    question = "only answer with yes or no: " + sentences[-1].strip()
+    question = "Only answering with yes or no, " + sentences[-1].strip()
     
     # Get the answer before saving it
     answer = get_yes_or_no_answer(context, question)  
