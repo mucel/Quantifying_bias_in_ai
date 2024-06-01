@@ -20,6 +20,9 @@ They address the main issues with prompt probing by explaining the biases that p
 
 
 ## Theoretical background (500 words)
+
+.... 
+
 Tamkin et al. (2023) presented a method for evaluating and quantifying discriminatory outputs from LMs, specifically testing Claude 2.0 model. Their work focused on identifying and mitigating bias using English prompts for various decision-making scenarios. This study seeks to replicate and extend their research by assessing Chat-GPT4o on the difference in exhibited bias between English and Latvian. Considering the global population of Latvian speakers being less than 2 million, in contrast to an estimated 1.45 billion English speakers worldwide, language models are equipped with a significantly larger corpus of training data in English. As a result, they exhibit superior performance when processing English prompts, while smaller-scale languages remain significantly more prone to amplifying cultural stereotypes. Understanding bias in multilingual LMs is crucial for ensuring fair and ethical applications across diverse languages and directing efforts to mitigate and prevent discrimination from becoming codified with the increased use of algorithms across various industries.
 
 ##  Mthology : Experimental setup (750 words)
@@ -43,21 +46,22 @@ Finally, we will conduct a statistical hypothesis test (for example a paired t-t
 
 
 ## Discussion (750 words)
-A few issues that were noticed during the research will be addressed in this section.
+A few issues that were noticed during the research as well as possible solutions will be addressed in this section.
 
-#### Limitations of the experiment. 
-The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 milion fluent speakers world wide (Latviešu Valoda, n.d.). As this lead to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equiped to answer the intended propmts. The focus was shifted to one of the most known and largest model trained on neumorous languages - ChatGPT, which included latvian and oviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay wals for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
+#### Limitations of the experiment (is 350 words)
+The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
 The amount of resources also influenced the evaluation of the prompts. As now it was only done by researchers of the study, who are bachelor students that are native speakers, but are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
 
-Another limitation was the amount of time that was allocated to this research as this was a project for a Text Mining course, around a moth was given to complete it. Thus, the coice of only analysisng a one set of propmts could have lead to biases such as Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias in the analysis, because LLMs are generally sensitive to subtle changes in the luigistic preferences expresed trough wording, verbalization etc. of prompts (Cao et al., 2022). Further research could explore a simpler methods, which have been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
+Another limitation was the amount of time that was allocated to this research as this was a project for a Text Mining course, around a month was given to complete it. Thus, the choice of only analysisng a one set of prompts could have lead to biases such as Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias in the analysis, because LLMs are generally sensitive to subtle changes in the luigistic preferences expressed through wording, verbalization etc. of prompts (Cao et al., 2022). Further research could explore simpler methods, which have been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
 
- 
 
 ### Solutions : Mitigating bias (300 words)
 A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
-Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
+Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLMs. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
+
+
 
 
 ## Conclusion (150 words)
