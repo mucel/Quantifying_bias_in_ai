@@ -21,7 +21,8 @@ They address the main issues with prompt probing by explaining the biases that p
 
 ## Theoretical background (500 words)
 
-.... 
+Research suggested that to do suface-level evaluations of the preformance of LLMs form both systems and user perspective is done by using data sets (Sun et al., 2023, Kotek et al., 2023, Smith et al., 2022, Nadeem et al., 2020). Howevere, some maily focused on the evaluation of preformance by using scores as comprehencivness rate (Sun et al., 2023) rather than focusing on the quantification of biases. Others focused on soely a singular bias for the evaluation (Kotek et al., 2023). As the intent was to eplore multiple biases, ... 
+
 
 Tamkin et al. (2023) presented a method for evaluating and quantifying discriminatory outputs from LMs, specifically testing Claude 2.0 model. Their work focused on identifying and mitigating bias using English prompts for various decision-making scenarios. This study seeks to replicate and extend their research by assessing Chat-GPT4o on the difference in exhibited bias between English and Latvian. Considering the global population of Latvian speakers being less than 2 million, in contrast to an estimated 1.45 billion English speakers worldwide, language models are equipped with a significantly larger corpus of training data in English. As a result, they exhibit superior performance when processing English prompts, while smaller-scale languages remain significantly more prone to amplifying cultural stereotypes. Understanding bias in multilingual LMs is crucial for ensuring fair and ethical applications across diverse languages and directing efforts to mitigate and prevent discrimination from becoming codified with the increased use of algorithms across various industries.
 
