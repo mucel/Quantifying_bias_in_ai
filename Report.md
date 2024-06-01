@@ -46,7 +46,7 @@ Prompt probing as a method in itself can be inconsistent and unreliable, so the 
 A few issues that were noticed during the research will be addressed in this section.
 
 #### Limitations of the experiment. 
-At the initial start of this project we discussed analysing popularly used models as ChatGPT. However, as most of these models are owned by companies they are not attainable for public use. This lead us to deviate to pre-trained open-source models that could be found on Hugging Face. 
+The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 milion fluent speakers world wide (Latviešu Valoda, n.d.). As this lead to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equiped to answer the intended propmts. The focus was shifted to one of the most known and largest model trained on neumorous languages - ChatGPT, which included latvian and oviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay wals for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
 The evaluation of the prompts was only done by two bachelor students that are native speakers, who are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
 
