@@ -1,17 +1,16 @@
 # Report 
-A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions), if it contains all relevant contents, and how solid the results are.
+A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions) if it contains all relevant content, and how solid the results are.
 
 
 ## Abstract (300 words)
-Large Language Models are known for perpetuating, if not amplifying, the biases of society, but often the issues with analysing them are due to the lack of universalizability (???) of the methods. 
-
-/// This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT, to assess the differences in stereotypical bias between two languages. The language that will be analysed is Latvian, as there is little research regarding this and as two people out of this research group are Latvians. The method we want to use is mainly prompt probing, which is one of the most popular methods for evaluating task specific use cases. This method was chosen based on a literature review regarding various approaches. We would analyse ChatGPT-4o with prompts acquired from to Tamkin et al. (2023), with an aim to analyse stereotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact prompts used.
+Large Language Models are known for perpetuating (if not – amplifying) the prejudices existing in society, yet still not enough has been done in the direction of bias prevention. Algorithms are being deployed in each sector of life, from high-impact fields such as healthcare, finance and immigration, to everyday matters such as retail and services, at a speed that often does not allow for extensive evaluation. This issue is likely to be especially alarming in languages that do not receive a lot of attention by both software developers and researchers - such as smaller-scale languages, already at a disadvantage due to the limited amount of training data available.
+This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al. (2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
 
 
 
 ## Introduction (500 words)
 
-As LLMs are becoming more increasingly used in everyday life. There has arisen a need [??] to detect and mitigate biases. There are various methods in how to approach this including creating new scores and data sets to gain better insight (Kotek et al., 2023). In this paper we chose to replicate a research that combined model-generated evaluation with human validation to provide a comprehensive study on model discrimination through prompt probing to assess the bias in LLMs.
+As LLMs are becoming increasingly used in everyday life. There has arisen a need [??] to detect and mitigate biases. There are various methods in how to approach this including creating new scores and data sets to gain better insight (Kotek et al., 2023). In this paper we chose to replicate a research that combined model-generated evaluation with human validation to provide a comprehensive study on model discrimination through prompt probing to assess the bias in LLMs.
 
 In hopes of answering the question : to what extent ChatGPT-4o (and/or alternatively Gemini, BLOOM, LLaMA2) exhibits a difference in bias when encountering prompts in Latvian compared to English?
 
@@ -22,7 +21,7 @@ They address the main issues with prompt probing by explaining the biases that p
 
 
 ## Method (1500 words)
-As prompt probing exibits biases a simpler method has been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
+[what? how is that relevant for us] As prompt probing exibits biases a simpler method has been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
 
 
 
