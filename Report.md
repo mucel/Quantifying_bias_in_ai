@@ -69,7 +69,10 @@ Age discrimination scores also demonstrate variations between English and Latvia
 Overall, the comparison of explicit and implicit bias analysis between English and Latvian prompts indicates varying levels of bias across different demographic categories, underscoring the importance of considering linguistic and cultural nuances when evaluating bias in language models. Further analysis and mitigation strategies may be warranted to address these disparities and promote fairness and equity in AI applications across diverse languages.
 
 ## Evaluation / Analysis of results (300 words)
-... 
+![Explicit English Plot](exp_eng_plot.png) 
+![Implicit English Plot](imp_eng_plot.png) 
+![Explicit Latvian Plot](exp_lv_plot.png) 
+![Implicit Latvian Plot](imp_eng_plot.png) 
 
 
 
