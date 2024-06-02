@@ -74,7 +74,7 @@ Overall, the comparison of explicit and implicit bias analysis between English a
 
 
 ## Discussion 
-A few issues that were noticed during the research as well as possible solutions will be addressed in this section.
+The primary observation that emerged from our work is the disparaty in access to the majority of large language models between languages, as most models that we tested did not support Latvian at all. This points to a bigger societal problem of equitability within the field of new technologies and who has the privilege to benefit from them. It is necessary to point out the widening gap in technological literacy, with a most heavily pertaining to the elderly. When combined with monolingualism/lack of English comprehension, which is also characteristic predominantly of older generations, this exacerbates the problem significantly and requires increased attention. 
 
 ### Evaluation of the results and method 
 ... 
