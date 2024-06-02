@@ -8,7 +8,7 @@ By Māra Učelniece, Ralfs Brutāns, Michalina Loch.
 
 Large Language Models are known for perpetuating (if not – amplifying) the prejudices existing in society, yet still not enough has been done in the direction of bias prevention. Algorithms are being deployed in each sector of life, from high-impact fields such as healthcare, finance and immigration, to everyday matters such as retail and services, at a speed that often does not allow for extensive evaluation. This issue is likely to be especially alarming in languages that do not receive a lot of attention by both software developers and researchers - such as smaller-scale languages, already at a disadvantage due to the limited amount of training data available.
 
-This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al.(2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
+This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al. (2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
 
 ## Introduction 
 
@@ -36,7 +36,7 @@ After collecting the outputs in a dataframe, we will employ the mixed effects mo
 Finally, we will conduct a statistical hypothesis test (for example a paired t-test) to compare the mean discrimination scores between English and Latvian prompts. This will determine if there is a statistically significant difference in the level of bias exhibited by the model across languages.
 
 
-### Results
+## Results
 
 #### Explicit Bias Analysis
 
@@ -76,7 +76,7 @@ Overall, the comparison of explicit and implicit bias analysis between English a
 ## Discussion 
 The primary observation that emerged from our work is the disparaty in access to the majority of large language models between languages, as most models that we tested did not support Latvian at all. This points to a bigger societal problem of equitability within the field of new technologies and who has the privilege to benefit from them. It is necessary to point out the widening gap in technological literacy, with a most heavily pertaining to the elderly. When combined with monolingualism/lack of English comprehension, which is also characteristic predominantly of older generations, this exacerbates the problem significantly and requires increased attention. 
 
-### Evaluation of the results and method 
+## Evaluation 
 ... 
 
 ### Limitations of the experiment 
@@ -100,7 +100,7 @@ Nonetheless, there is a wide gap between smaller open-source models and larger o
 
 They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
-## Conclusion
+### Conclusions and directions for future research
 ...
 This reaearch had used a popular method to explore the biases in LLMS, specificaly in ChatGPT3.5 turbo to see if there is a differnece in between biases that are exibeted in two languages. The results reflected that ... 
 
