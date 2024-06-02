@@ -76,7 +76,6 @@ Overall, the comparison of explicit and implicit bias analysis between English a
 ## Discussion 
 The primary observation that emerged from our work is the disparaty in access to the majority of large language models between languages, as most models that we tested did not support Latvian at all. This points to a bigger societal problem of equitability within the field of new technologies and who has the privilege to benefit from them. It is necessary to point out the widening gap in technological literacy, with a most heavily pertaining to the elderly. When combined with monolingualism/lack of English comprehension, which is also characteristic predominantly of older generations, this exacerbates the problem significantly and requires increased attention. 
 
-
 ### Limitations of the experiment 
 The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
@@ -94,9 +93,7 @@ Another proposed way to mitigate negative impacts of prompt bias in factual know
 Nonetheless, the method istelf that is used to evaluate bises also can be influenced by biases of the method. A reasrch that address this is "Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View" by Cao et al. They explained that propmt probing contains biases mainly based in the specific types of prompts, with also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 
-
 ### Conclusions and directions for future research
-...
 This reaearch had used a popular method to explore the biases in LLMS, specificaly in ChatGPT3.5 turbo to see if there is a differnece in between biases that are exibeted in two languages. The results reflected that ... 
 
 Further resaerch could investigate futher into the fact that there is a wide gap between smaller open-source models and larger ones, which could be explored further espetially in various languages(Sun et al., 2023). 
