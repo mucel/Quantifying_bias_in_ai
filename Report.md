@@ -89,7 +89,3 @@ Further resaerch could investigate ...
 ... 
 
 
-
-### Author contributions:
-Mara: Literature review, writing the abstract, introduction, discussion and conclusion.  Michalina: Methodology. 
-Ralfs: Translations of prompts into Latvian and doing the probing and the analysis. 
