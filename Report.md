@@ -14,7 +14,6 @@ Large Language Models (LLMs) are becoming increasingly used in everyday life to 
 
 
 
-They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 
 ## Theoretical background (it is 540 words)
@@ -70,6 +69,8 @@ Reinforcement Learning regarding the mitigation of biases is quite interesting i
 Nonetheless, there is a wide gap between smaller open-source models and larger ones based on the systems performance from both the system and user perspective, which could be explored further (Sun et al., 2023). 
 
 
+They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
+
 ## Conclusion (150 words)
 ...
 
@@ -78,17 +79,10 @@ Nonetheless, there is a wide gap between smaller open-source models and larger o
 
 
 ### References 
-References Cao, B., Lin, H., Han, X., Liu, F., & Sun, L. (2022). Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View. https://arxiv.org/pdf/2203.12258Kotek  
-H., Dockum, R., & Sun, D. (2023). Gender bias and stereotypes in Large Language Models. Proceedings of the ACM Collective Intelligence Conference. https://doi.org/10.1145/3582269.3615599Nadeem   
-M., Bethke, A., & Reddy, S. (2020). StereoSet: Measuring stereotypical bias in pretrained language models. https://arxiv.org/pdf/2004.09456Sun   
-D. Q., Abzaliev, A., Kotek, H., Xiu, Z., Klein, C., & Williams, J. D. (2023, November 7). DELPHI: Data for Evaluating LLMs’ Performance in Handling Controversial Issues. ArXiv.org. https://doi.org/10.48550/arXiv.2310.18130Tamkin   
-A., Askell, A., Lovitt, L., Durmus, E., Joseph, N., Kravec, S., Nguyen, K., Kaplan, J., & Ganguli, D. (2023). Evaluating and Mitigating Discrimination in Language Model Decisions. In  arXiv.org. https://doi.org/10.48550/arxiv.2312.03689Xu   
-Z., Peng, K., Ding, L., Tao, D., & Lu, X. (2024). Take Care of Your Prompt Bias! Investigating and Mitigating Prompt Bias in Factual Knowledge Extraction. https://arxiv.org/pdf/2403.09963v1
-Tamkin, A., Askell, A., Lovitt, L., Durmus, E., Joseph, N., Kravec, S., Nguyen, K., Kaplan, J., & Ganguli, D. (2023). Evaluating and Mitigating Discrimination in Language Model Decisions. ArXiv (Cornell University). https://doi.org/10.48550/arxiv.2312.03689
+... 
 
 
 
 ### Author contributions:
-Mara: literature review, writing the introduction and the abstract
-Michalina: formulating the research question, choosing the study design and methodology
-Ralfs: translations of prompts into Latvian
+Mara: Literature review, writing the abstract, introduction, discussion and conclusion.  Michalina: Methodology. 
+Ralfs: Translations of prompts into Latvian and doing the analysis. 
