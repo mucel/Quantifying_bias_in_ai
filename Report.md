@@ -76,9 +76,6 @@ Overall, the comparison of explicit and implicit bias analysis between English a
 ## Discussion 
 A few issues that were noticed during the research as well as possible solutions will be addressed in this section.
 
-### Evaluation of the results and method 
-... 
-
 ### Limitations of the experiment 
 The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
@@ -89,22 +86,19 @@ Another limitation was the amount of time that was allocated to this research as
 
 ### Solutions: Mitigating bias 
 
-The method in itself : Sadly this is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. 
+The method that was used in this research : pompt probing, is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. A propoded approach to resolve this is by combining multiple methods ... (???)
 
-A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
+Another proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
-Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLMs. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
-
-Nonetheless, there is a wide gap between smaller open-source models and larger ones based on the systems performance from both the system and user perspective, which could be explored further (Sun et al., 2023). 
+Nonetheless, the method istelf that is used to evaluate bises also can be influenced by biases of the method. A reasrch that address this is "Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View" by Cao et al. They explained that propmt probing contains biases mainly based in the specific types of prompts, with also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 
-They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
 ## Conclusion
 ...
 This reaearch had used a popular method to explore the biases in LLMS, specificaly in ChatGPT3.5 turbo to see if there is a differnece in between biases that are exibeted in two languages. The results reflected that ... 
 
-Further resaerch could investigate ... 
+Further resaerch could investigate futher into the fact that there is a wide gap between smaller open-source models and larger ones, which could be explored further espetially in various languages(Sun et al., 2023). 
 
 
 
