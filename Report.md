@@ -4,18 +4,18 @@ A 4-page, double-column PDF report (4 pages excluding references), following a s
 # Qunatifying the differences in bias in ChatGPT between Latvian and English. 
 By Māra Učelniece, Ralfs Brutāns, Michalina Loch.
 
-## Abstract (300 words, but is not part of word count!)
+## Abstract 
 
 Large Language Models are known for perpetuating (if not – amplifying) the prejudices existing in society, yet still not enough has been done in the direction of bias prevention. Algorithms are being deployed in each sector of life, from high-impact fields such as healthcare, finance and immigration, to everyday matters such as retail and services, at a speed that often does not allow for extensive evaluation. This issue is likely to be especially alarming in languages that do not receive a lot of attention by both software developers and researchers - such as smaller-scale languages, already at a disadvantage due to the limited amount of training data available.
 
 This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al.(2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
 
-## Introduction (500 words is 280 atm)
+## Introduction 
 
 Large Language Models (LLMs) are becoming increasingly used in everyday life to make high-risk decisions that impact peoples lives in many aspects. This has lead to a rise in the amaount of reserach focused twoards detecting and mitigating biases that occur in AI algorithms (Arrieta et al., 2019). At the moment there are various developed methods that investigate the interperability and explainability to asses the fairness, in this reserach defined as balanced treatment of various communities and individuals, in the decision making cycle of algorithms (Suresh & Guttag, 2021). This research utilizes the method called pormpt probing, in which one investigates the internal behaviours of LLMs by using cearfully constructed propmpts and examaning the generated outputs. This is done by replicating Tamkin et al. (2023) reaerch that evaluated biases in a pre-treained LLMs. It was mainly chosen as their set of propmpts that they created trough combining model-generated evaluation with human validation were open for public use on Hugging Face. This was aduqete for investigating our research question: To what extent ChatGPT3.5 turbo exhibits a difference in bias when encountering prompts in Latvian compared to English? The reason for selecting ChatGPT3.5 turbo as our model was based on two main criterias. First, that the model had to be trained in Latvian, which most open-source models are dispointingly not. The second, that based on previous research the model had already exibited better scores than others on the market (Sun et al., 2023), so this reserach wanted to see how the "best" model differs initself. Additionally, the analysis of ChatGPT has been acquiring the most attention due to the model's swift growth in popularity. The results of our reserach ... 
 
 
-## Theoretical background (it is 540 words)
+## Theoretical background 
 
 Based on research it was found that surface-level evaluations of the performance of LLMs form both systems and user perspective is often done by using data sets, and with most they also created new metrics to evaluate the biases that the models exhibit, for example with the SterioSet created an idealized score that compared the model to an idealistic model (Sun et al., 2023, Kotek et al., 2023, Smith et al., 2022, Nadeem et al., 2020). However, some mainly focused on the evaluation of performance by using these newly created scores (Sun et al., 2023) rather than focusing on the quantification of biases. Others that did quantify biases, focused on a singular bias : gender, for the evaluation (Kotek et al., 2023). One method that was not rooted in datasets was a model-free approach, which is when probing is used as a prompting task in the hopes of analysing responses without leveraging any specific knowledge (Li et al., 2022). Sadly this is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. Another relatively new approach is unanticipated bias detection through the use of Uncertainty Quantification and Explainable AI methods to detect less obvious implicit biases (Kruspe, 2024). Still in that study they mainly focus on how explainability can help the users identify bias. As the intent was to explore multiple chosen biases : gender and race, the focus was narrowed down to a popularly used approach for testing a models factual knowledge retrieval called prompt probing (Jiang et al., 2020, Brown et al., 2020, Zhong et al., 2021). This method was deemed fitting as it directly reveals biases that are observable in the models through using carefully crafted prompts, allows for detailed examination in various contexts so that we could investigate chosen biases and allows to assess real-world relevance through hypothetical scenarios. 
 
@@ -24,17 +24,12 @@ The main research that was chosen for replication of prompts and methods for eva
 Especially when taking into consideration that the global population of Latvian speakers is less than 2 million, in contrast to an estimated 1.45 billion English speakers worldwide (Latviešu Valoda, n.d., WordsRated, 2023). Along with the fact that any AI models performance is related to the amount of data that has been used to train them, and that in English these models have been equipped with a significantly larger corpus (Lucchi, 2023, Taulli, 2023). As a result, they exhibit superior performance when processing English prompts, while smaller-scale languages remain significantly more prone to amplifying cultural stereotypes. Understanding bias in multilingual LMs is crucial for ensuring fair and ethical applications across diverse languages and directing efforts to mitigate and prevent discrimination from becoming codified with the increased use of algorithms across various industries.
 
 
-##  Mthology : Experimental setup (750 words is 340 atm !!! )
-
-### Data collection ???
-...
-
-
-### Method with math and description of main algorithms ??? 
+##  Methodology: Experimental setup 
+ 
 We will utilize the existing dataset of prompts developed by Tamkin et al. (2023), encompassing over 90 diverse topic areas for realistic decision-making scenarios. These prompts have been validated by a human evaluation study, achieving high ratings on quality. The prompts will be translated into grammatically accurate and culturally appropriate Latvian by using Google API, and then cross-evaluated by two native Latvian speakers to ensure a reliable translation. The resulting dataset will comprise of **NUMBER** prompts (... in English, ... in Latvian) covering a range of decision-making domains, both high-risk (like loan approvals, employment opportunities, and criminal justice) and low-risk (such as approving a merchandise return). Each prompt will contain placeholders for varying demographic information (e.g., name, age, location) to assess potential bias based on these attributes.
 We will employ ChatGPT4o to evaluate the translated prompts and output a yes/no decision, with "yes" being the favourable outcome for the hypothetical person in question. The model's outputs will be analyzed using the discrimination score metric outlined by Tamkin et al. (2023). This score quantifies the degree of bias exhibited by the model's decisions based on demographic variations within the prompts.
 
-The primary algorithm used will be the built-in processing capabilities of BLOOM. We will not be modifying the internal algorithms of the model itself. 
+The primary algorithm used will be the built-in processing capabilities of Chat GPT-3.5 turbo 0125. We will not be modifying the internal algorithms of the model itself. 
 
 The focus will be on analying the model's outputs for potential bias based on the translated prompts. Each prompt (English and Latvian) will be fed individually to a new session of ChatGPT4o to eliminate influence across prompts. 
 After collecting the outputs in a dataframe, we will employ the mixed effects model, as outlined in the original study, or, alternatively a simplified version consisting of the average difference in logit transformed probability of a positive decision between advantaged and disadvantaged groups for each prompt.
@@ -49,13 +44,13 @@ Finally, we will conduct a statistical hypothesis test (for example a paired t-t
 
 
 
-## Discussion (750 words)
+## Discussion 
 A few issues that were noticed during the research as well as possible solutions will be addressed in this section.
 
-### Evaluation of the results and method (400 words)
+### Evaluation of the results and method 
 ... 
 
-### Limitations of the experiment (is 350 words)
+### Limitations of the experiment 
 The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
 The amount of resources also influenced the evaluation of the prompts. As now it was only done by researchers of the study, who are bachelor students that are native speakers, but are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
@@ -63,7 +58,7 @@ The amount of resources also influenced the evaluation of the prompts. As now it
 Another limitation was the amount of time that was allocated to this research as this was a project for a Text Mining course, around a month was given to complete it. Thus, the choice of only analysisng a one set of prompts could have lead to biases such as Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias in the analysis (Cao et al., 2022), because LLMs are generally sensitive to subtle changes in the luigistic preferences expressed through wording, verbalization etc. of prompts (Jiang et al., 2020). Further research could explore simpler methods, which have been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
 
 
-### Solutions : Mitigating bias (300 words)
+### Solutions: Mitigating bias 
 
 The method in itself : Sadly this is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. 
 
@@ -76,7 +71,7 @@ Nonetheless, there is a wide gap between smaller open-source models and larger o
 
 They address the main issues with prompt probing by explaining the biases that play a role in the method itself. With also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
-## Conclusion (150 words)
+## Conclusion
 ...
 This reaearch had used a popular method to explore the biases in LLMS, specificaly in ChatGPT3.5 turbo to see if there is a differnece in between biases that are exibeted in two languages. The results reflected that ... 
 
