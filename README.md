@@ -2,45 +2,48 @@
 By Māra Učelniece, Michalina Loch, Ralfs Brutāns. 
 
 
-##### Abstract
+#### Abstract
 
-Large Language Models are known for perpetuating if not amplifying the biases of society, but often the issues with analysing them are due to the lack of universalizability of the methods. This research will address the biases that occur in one of the most popular at LLM at the moment - ChatGPT to assess the differences in stereotypical bias between language. The language that will be analysed is latvian, as there is little research regarding this and as two people out of this research are Latvians. The method we want to use is mainly prompt probing. This method was chosen based on a literature review regarding various approaches. 
+Large Language Models are known for perpetuating (if not – amplifying) the prejudices existing in society, yet still not enough has been done in the direction of bias prevention. Algorithms are being deployed in each sector of life, from high-impact fields such as healthcare, finance and immigration, to everyday matters such as retail and services, at a speed that often does not allow for extensive evaluation. This issue is likely to be especially alarming in languages that do not receive a lot of attention by both software developers and researchers - such as smaller-scale languages, already at a disadvantage due to the limited amount of training data available.
 
-We would analyse ChatGPT-4o with prompts to analyse stereotypical implicit biases. This paper was chosen for replication based on the availability in data of the exact prompts that were used to investigate bias
+This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al.(2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
 
-Possibly cross validation between the prompts to analyse the 
-differences. 
 
-##### Research questions 
+#### Research questions 
 A list of research questions you would like to address during the project.  
 
-    To what extent [a specific language model / a variety of popular models] show a difference in bias when encountering prompts in different languages?
+    To what extent ChatGPT3.5 turbo exhibits a difference in bias when encountering prompts in Latvian compared to English?
 
-##### Dataset
+#### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+    
+    Propmts: 
+        From a study, that have theirs on Hugging Face 
 
-    Large Language Models:  
-        ChatGPT (OpenAI)
-        Possibly open-source models:  Gemini (Google)  BLOOM(BigScience)  LLaMA2(Meta)   
+    Large Language Model:  
+        ChatGPT3.5 turbo trough api 
 
-* Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLM’s. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
-
-##### A tentative list of milestones for the project
+#### A tentative list of milestones for the project
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
 
-    Explore current research + possible data sets (all) 
+    Explore current research + possible data sets (Mara) 
     -> Decide on a statistical method + data set (all)
-    -> Translate to latvian. 
-    -> Do the model prompting. 
-    -> Gaining our metric of bias in data by using the benchmark method 
-    -> Work on the report 
+    -> Translate to latvian (Ralfs)
+    -> Do the model prompting (Ralfs)
+    -> Work on the report (Mara + Michalina)
     -> Documenting the steps along the way (all)
-    -> Evaluation of obtained bias
-    -> Explanation/ summarizing the impact of bias in a report 
-    -> Relation to our (main) research question(s)
+    -> Evaluation of obtained bias (Mara)
+    -> Explanation/ summarizing the impact of bias in a report (Mara)
+    -> Relation to our (main) research question(s) (all)
 
-##### Documentation
+##### Author contributions to report:
+Mara: Abstract, introduction, theoretical background, discussion and conclusion. 
+Michalina: Methodology. 
+Ralfs: Results and anlaysis of results.
+
+
+#### Documentation
 This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
 
-At the moment our repo only contains our chosen license and the readme file, the literature review files, report, and the sheet for prompts. We are working on translating the prompts and working on the report with still ongoing research being made. 
+...
 
