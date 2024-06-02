@@ -1,6 +1,8 @@
 # Report 
 A 4-page, double-column PDF report (4 pages excluding references), following a standard structure (where applicable): abstract, introduction, related work, (brief) data collection, dataset description with summary statistics, methods with math and description of main algorithms, results and findings, conclusions. This report will be evaluated according to how clearly and succinctly it is written, if the style is appropriate (e.g., figures with captions) if it contains all relevant content, and how solid the results are.
 
+# Qunatifying the differences in bias in ChatGPT between Latvian and English. 
+By Māra Učelniece, Ralfs Brutāns, Michalina Loch.
 
 ## Abstract (300 words, but is not part of word count!)
 
@@ -8,12 +10,9 @@ Large Language Models are known for perpetuating (if not – amplifying) the pre
 
 This research will address the stereotypical biases exhibited by one of the most popular language models - ChatGPT, with the aim of quantifying the difference between two languages – English and Latvian. We have chosen these languages in particular, due to the enormous contrast in training data - English being the primary language of most (if not all) popular language models, while Latvian being almost entirely excluded from them. Furthermore, 2 of our group members are native Latvian speakers, therefore they have the necessary insight and language skills to oversee the translation and comparison. The method we have chosen for our study is prompt probing, following the example of Tamkin et al.(2023), thanks to its feasibility within our time and skillset. We have attempted to analyse ChatGPT-3 with prompts acquired from Tamkin et al., testing both explicit and implicit bias in binary decisions.
 
-## Introduction (500 words)
+## Introduction (500 words is 280 atm)
 
-Large Language Models (LLMs) are becoming increasingly used in everyday life to make high-risk decisions that impact peoples lives in many aspects. This has lead to a rise in the amaount of reserach focused twoards detecting and mitigating biases that occur in AI algorithms (Arrieta et al., 2019). At the moment there are various developed methods that investigate the interperability and explainability to asses the fairness, in this reserach defined as balanced treatment of various communities and individuals, in the decision making cycle of algorithms (Suresh & Guttag, 2021). This research utilizes the method called pormpt probing, in which one investigates the internal behaviours of LLMs by using cearfully constructed propmpts and examaning the generated outputs. This is done by replicating Tamkin et al. (2023) reaerch that evaluated biases in a pre-treained LLMs. It was mainly chosen as their set of propmpts that they created trough combining model-generated evaluation with human validation were open for public use on Hugging Face. This was aduqete for investigating our research question: To what extent ChatGPT3.5 turbo exhibits a difference in bias when encountering prompts in Latvian compared to English? The reason for selecting ChatGPT3.5 turbo as our model was based on two main criterias. First, that the model had to be trained in Latvian, which most open-source models are dispointingly not. The second, that based on previous research the model had already exibited better scores than others on the market (Sun et al., 2023), so this reserach wanted to see how the "best" model differs initself. Additionally, the analysis of ChatGPT has been acquiring the most attention due to the model's swift growth in popularity. 
-
-
-
+Large Language Models (LLMs) are becoming increasingly used in everyday life to make high-risk decisions that impact peoples lives in many aspects. This has lead to a rise in the amaount of reserach focused twoards detecting and mitigating biases that occur in AI algorithms (Arrieta et al., 2019). At the moment there are various developed methods that investigate the interperability and explainability to asses the fairness, in this reserach defined as balanced treatment of various communities and individuals, in the decision making cycle of algorithms (Suresh & Guttag, 2021). This research utilizes the method called pormpt probing, in which one investigates the internal behaviours of LLMs by using cearfully constructed propmpts and examaning the generated outputs. This is done by replicating Tamkin et al. (2023) reaerch that evaluated biases in a pre-treained LLMs. It was mainly chosen as their set of propmpts that they created trough combining model-generated evaluation with human validation were open for public use on Hugging Face. This was aduqete for investigating our research question: To what extent ChatGPT3.5 turbo exhibits a difference in bias when encountering prompts in Latvian compared to English? The reason for selecting ChatGPT3.5 turbo as our model was based on two main criterias. First, that the model had to be trained in Latvian, which most open-source models are dispointingly not. The second, that based on previous research the model had already exibited better scores than others on the market (Sun et al., 2023), so this reserach wanted to see how the "best" model differs initself. Additionally, the analysis of ChatGPT has been acquiring the most attention due to the model's swift growth in popularity. The results of our reserach ... 
 
 
 ## Theoretical background (it is 540 words)
@@ -25,8 +24,13 @@ The main research that was chosen for replication of prompts and methods for eva
 Especially when taking into consideration that the global population of Latvian speakers is less than 2 million, in contrast to an estimated 1.45 billion English speakers worldwide (Latviešu Valoda, n.d., WordsRated, 2023). Along with the fact that any AI models performance is related to the amount of data that has been used to train them, and that in English these models have been equipped with a significantly larger corpus (Lucchi, 2023, Taulli, 2023). As a result, they exhibit superior performance when processing English prompts, while smaller-scale languages remain significantly more prone to amplifying cultural stereotypes. Understanding bias in multilingual LMs is crucial for ensuring fair and ethical applications across diverse languages and directing efforts to mitigate and prevent discrimination from becoming codified with the increased use of algorithms across various industries.
 
 
-##  Mthology : Experimental setup (750 words)
+##  Mthology : Experimental setup (750 words is 340 atm !!! )
 
+### Data collection ???
+...
+
+
+### Method with math and description of main algorithms ??? 
 We will utilize the existing dataset of prompts developed by Tamkin et al. (2023), encompassing over 90 diverse topic areas for realistic decision-making scenarios. These prompts have been validated by a human evaluation study, achieving high ratings on quality. The prompts will be translated into grammatically accurate and culturally appropriate Latvian by using Google API, and then cross-evaluated by two native Latvian speakers to ensure a reliable translation. The resulting dataset will comprise of **NUMBER** prompts (... in English, ... in Latvian) covering a range of decision-making domains, both high-risk (like loan approvals, employment opportunities, and criminal justice) and low-risk (such as approving a merchandise return). Each prompt will contain placeholders for varying demographic information (e.g., name, age, location) to assess potential bias based on these attributes.
 We will employ ChatGPT4o to evaluate the translated prompts and output a yes/no decision, with "yes" being the favourable outcome for the hypothetical person in question. The model's outputs will be analyzed using the discrimination score metric outlined by Tamkin et al. (2023). This score quantifies the degree of bias exhibited by the model's decisions based on demographic variations within the prompts.
 
@@ -51,9 +55,7 @@ A few issues that were noticed during the research as well as possible solutions
 ### Evaluation of the results and method (400 words)
 ... 
 
-The method in itself : Sadly this is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. 
-
-#### Limitations of the experiment (is 350 words)
+### Limitations of the experiment (is 350 words)
 The main limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4,  ... bit this was more expensive ???
 
 The amount of resources also influenced the evaluation of the prompts. As now it was only done by researchers of the study, who are bachelor students that are native speakers, but are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
@@ -62,6 +64,9 @@ Another limitation was the amount of time that was allocated to this research as
 
 
 ### Solutions : Mitigating bias (300 words)
+
+The method in itself : Sadly this is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. 
+
 A proposed way to mitigate negative impacts of prompt bias in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their experiments this approach can rectify inflated benchmark performance. 
 
 Reinforcement Learning regarding the mitigation of biases is quite interesting in training LLMs. As it does not mitigate the biases, but only helps the user not gain unwanted answers. 
@@ -73,7 +78,9 @@ They address the main issues with prompt probing by explaining the biases that p
 
 ## Conclusion (150 words)
 ...
+This reaearch had used a popular method to explore the biases in LLMS, specificaly in ChatGPT3.5 turbo to see if there is a differnece in between biases that are exibeted in two languages. The results reflected that ... 
 
+Further resaerch could investigate ... 
 
 
 
@@ -85,4 +92,4 @@ They address the main issues with prompt probing by explaining the biases that p
 
 ### Author contributions:
 Mara: Literature review, writing the abstract, introduction, discussion and conclusion.  Michalina: Methodology. 
-Ralfs: Translations of prompts into Latvian and doing the analysis. 
+Ralfs: Translations of prompts into Latvian and doing the probing and the analysis. 
