@@ -28,9 +28,7 @@ Especially when taking into consideration that the global population of Latvian 
 
 ##  Mthology : Experimental setup (750 words is 340 atm !!! )
 
-
-### Method 
- 
+### Selected method 
 We will utilize the existing dataset of prompts developed by Tamkin et al. (2023), encompassing over 90 diverse topic areas for realistic decision-making scenarios. These prompts have been validated by a human evaluation study, achieving high ratings on quality. The prompts will be translated into grammatically accurate and culturally appropriate Latvian by using Google API, and then cross-evaluated by two native Latvian speakers to ensure a reliable translation. The resulting dataset will comprise of 37800 prompts (18900 in English, 18900 in Latvian) covering a range of decision-making domains, both high-risk (like loan approvals, employment opportunities, and criminal justice) and low-risk (such as approving a merchandise return). Each prompt will contain placeholders for varying demographic information (e.g., name, age, location) to assess potential bias based on these attributes.
 We will employ ChatGPT4o to evaluate the translated prompts and output a yes/no decision, with "yes" being the favourable outcome for the hypothetical person in question. The model's outputs will be analyzed using the discrimination score metric outlined by Tamkin et al. (2023). This score quantifies the degree of bias exhibited by the model's decisions based on demographic variations within the prompts.
 
@@ -40,7 +38,7 @@ The focus will be on analying the model's outputs for potential bias based on th
 After collecting the outputs in a dataframe, we will employ the mixed effects model, as outlined in the original study, or, alternatively a simplified version consisting of the average difference in logit transformed probability of a positive decision between advantaged and disadvantaged groups for each prompt.
 Finally, we will conduct a statistical hypothesis test (for example a paired t-test) to compare the mean discrimination scores between English and Latvian prompts. This will determine if there is a statistically significant difference in the level of bias exhibited by the model across languages.
 
-### The use of api's (200 words max )
+### The use of api's (200 words max)
 ...  
 
 ### Discrimination scores (200 words)
@@ -81,7 +79,7 @@ Age discrimination scores also demonstrate variations between English and Latvia
 
 Overall, the comparison of explicit and implicit bias analysis between English and Latvian prompts indicates varying levels of bias across different demographic categories, underscoring the importance of considering linguistic and cultural nuances when evaluating bias in language models. Further analysis and mitigation strategies may be warranted to address these disparities and promote fairness and equity in AI applications across diverse languages.
 
-### Evaluation of the results and method (400 words)
+### Evaluation of the results (400 words)
 ![Explicit English Plot](exp_eng_plot.png) 
 ![Implicit English Plot](imp_eng_plot.png) 
 ![Explicit Latvian Plot](exp_lv_plot.png) 
@@ -95,14 +93,12 @@ can even just descibe the plots if u like :)
 
 
 
-## Discussion (750 words)
+## Discussion (750 words is 714 atm)
 
-The primary contribution of this paper was to highlight the biases that can occur even in closely related models, while not denying the fact that various languages do not have equivalent accuracy scores, which OpneAI acknowledged themselves (OpenAI, 2023). Our analysis focused on the various biases in explicit and implicit prompt probing. That were analysed based on [methods] -??? 
-The results reflected that [results] - ??? 
-However, there were many factors that influenced the process and evaluation of the study.  
+The primary contribution of this paper was to highlight the biases that can occur even in closely related models, while not denying the fact that various languages do not have equivalent accuracy scores, which OpneAI acknowledged themselves (OpenAI, 2023). Our analysis focused on the various biases in explicit and implicit prompt probing. That was analysed based on discrimination scores of each group. The results reflected that there is a clear "yes" bias in the outputs, while with Latvian this was less prevalent, which indicates that there are linguistic social disparities rooted in the LLMs. However, there were many factors that influenced the process and evaluation of the study.  
 
 
-### Limitations (is 357 words)
+### Limitations 
 A key limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4, notwitstanding that it was more expensive. Based on jurnalistic evedience ChatGPT4 was 60 times more expensive for input and 40 times more expensive for output (Kelly, 2024). 
 
 The amount of resources also influenced the evaluation of the prompts. As now it was only done by researchers of the study, who are bachelor students that are native speakers, but are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has. 
@@ -110,10 +106,11 @@ The amount of resources also influenced the evaluation of the prompts. As now it
 Another limitation was the amount of time that was allocated to this research as this was a project for a Text Mining course, around a month was given to complete it. Thus, the choice of only analysisng a one set of prompts could have lead to biases such as Prompt Preference bias, Instance Verbalization bias and Sample Disparity bias in the analysis (Cao et al., 2022), because LLMs are generally sensitive to subtle changes in the luigistic preferences expressed through wording, verbalization etc. of prompts (Jiang et al., 2020). Further research could explore simpler methods, which have been proposed to universalise the best probing criteria, when investigating factual knowledge probing (Cao et al., 2022). 
 
 
-### Solutions to issues (300 words)
-The method that was used in this research: prompt probing, had some downfalls as it is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur (Li et al., 2022). A proposed way to resolve this is by using a combination of methods when analysing bises (Narain, 2023). Having said that the only way to understand completely where biases originate form one would need to asses every aspect of the PPDAC cycle of AI (Gao & Mavris, 2022). 
+### Solutions 
+The method that was used in this research: prompt probing, had some downfalls as it is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur (Li et al., 2022). A proposed way to resolve this is by using a combination of methods when analysing biases (Narain, 2023). Having said that, the only way to understand completely where biases originate from one would need to assess every aspect of the Problem, Plan, Data, Analysis, Conclusion cycle of AI as biases can be introduced at almost any step (Gao & Mavris, 2022). 
 
 Nonetheless, the evaluation of the results can also be influenced by biases of the method. A research that addresses this is "Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View" by Cao et al. They explained that prompt probing contains biases mainly based on the specific types of prompts, while also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). Another proposed way to mitigate negative impacts of prompt bias, specifically overfitting benchmarks and misleading language models, in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their findings this approach is able to rectify inflated benchmark performance while improving the retrieval capability of prompts. 
+
 
 
 ## Conclusion (is 175 words atm)
