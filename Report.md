@@ -79,17 +79,20 @@ Age discrimination scores also demonstrate variations between English and Latvia
 Overall, the comparison of explicit and implicit bias analysis between English and Latvian prompts indicates varying levels of bias across different demographic categories, underscoring the importance of considering linguistic and cultural nuances when evaluating bias in language models. Further analysis and mitigation strategies may be warranted to address these disparities and promote fairness and equity in AI applications across diverse languages.
 
 ### Evaluation of the results (400 words)
-![Explicit English Plot](exp_eng_plot.png) 
-![Implicit English Plot](imp_eng_plot.png) 
-![Explicit Latvian Plot](exp_lv_plot.png) 
-![Implicit Latvian Plot](imp_eng_plot.png) 
+![Explicit English Plot](exp_eng_plot.png)
+Figure 1. Answers for each of the categories for explicit prompts in English. Each of these plots indicates the amount of no answer/no/yes answer given by the model when a prompt contained said trait.
+![Implicit English Plot](imp_eng_plot.png)
+Figure 2. Answers for each of the categories for implicit prompts in English.
+![Explicit Latvian Plot](exp_lv_plot.png)
+Figure 3. Answers for each of the categories for explicit prompts in Latvian.
+![Implicit Latvian Plot](imp_eng_plot.png)
+Figure 4. Answers for each of the categories for implicit prompts in Latvian.
+>>>>>>> Stashed changes
 
-... the evaluation ??? 
-
-There is a clearly notiacble "yes" bias ... 
-
-can even just descibe the plots if u like :)
-
+       After summarizing the data and creating plots that indicate the amount of yes/no answers that were given by the model for each of the prompts, it is clearly visible that there exists a clear "yes" bias within the model. The bias is most explicit in the English implementation of the model, both when answering implicit and explicit prompts. For explicit Latvian prompts there is a noticeable increase in the amount of "no" answers received. This could be explained by the model having a smaller "yes" bias when explicit attributes are provided for training data in Latvian. Despite this high difference in "no" answers between the two languages, there does not appear to be an increase in bias. Moreover, inspecting these plots also reveals that there is not a clear pattern of discrimination visible in both Latvian and English answers from ChatGPT 3.5 Turbo. More specifically, there exists a varying amount of yes and no answers for each of the categories in both languages, but no visible patterns emerge when comparing implicit and explicit prompts within one language.
+      When comparing figure 1 and figure 2 it is visible that the differences between explicit and implicit prompts in English there is only a slight difference between the amount of yes/no answers and the differences are minute and that there exists a discrepancy between the amount of yes/no answers within different categories implying that there does not exist a clear bias in the English implementationn of ChatGPT 3.5 Turbo.
+      Furthermore, in figure 3 and figure 4 it is visible that there does exist a clear discrepancy between the amount of yes/no answers between implicit Latvian and explicit Latvian prompts. The amount of yes answers in implicit Latvian is noticeably higher when compared to the answers to explicit Latvian prompts, comparable to the distribution of yes/no answers in English answers. However, similiarly to the English answers it does not seem that the modelexhibits a clear pattern of discrimination for any of the categories, because the differences between categories are different between explicit and implicit prompts.
+      To sum up, the model does not seem to exhibit a clear bias towards any specific trait in both languages. The model clearly demonstrates a "yes" bias for these types of questions, however less so for explicit Latvian prompts. When comparing the answer distribution within one language, there are differences between the answer distributions indicating that age, race or gender bias is not prominent in this language model.
 
 
 ## Discussion (750 words is 714 atm)
