@@ -15,8 +15,8 @@ A list of research questions you would like to address during the project.
 
 #### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
-+ Prompts: 
-[Tamkin et al. (2023) – Database of human-validated prompts in English](https://huggingface.co/datasets/Anthropic/discrim-eval)
++ Prompts:
+    + [Tamkin et al. (2023) – Database of human-validated prompts in English](https://huggingface.co/datasets/Anthropic/discrim-eval)
 
 + Large Language Model:
     + ChatGPT3.5 Turbo 0125 (+OpenAI API tools)
