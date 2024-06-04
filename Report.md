@@ -84,17 +84,21 @@ Overall, the comparison of explicit and implicit bias analysis between English a
 
 ... the evaluation ??? 
 
+There is a clearly notiacble "yes" bias ... 
+
 can even just descibe the plots if u like :)
 
 
 
 ## Discussion (750 words)
 
-The primapry contribution of this papaer was to show how even the best evaluated model at the given moment does not have equvalent scores in various languages. Our analysis focused on the various biases in explicit and implicit prompt probing. The formulas used ..
+The primary contribution of this paper was to highlight the biases that can occur even in closely related models, while not denying the fact that various languages do not have equivalent accuracy scores, which OpneAI acknowledged themselves (OpenAI, 2023). Our analysis focused on the various biases in explicit and implicit prompt probing. That were analysed based on [methods] -??? 
+The results reflected that [results] - ??? 
+However, there were many factors that influenced the process and evaluation of the study.  
 
 
-### Limitations of the experiment (is 350 words)
-A key limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4, notwitstanding that it was more expensive. Based on jurnalistic evedience ChatGPT4 was more expensive by ...  (Kelly, 2024)
+### Limitations of the experiment (is 357 words)
+A key limitation that was faced during this research related to the intent to explore a lesser-spoken language - latvian, which has less than 2 million fluent speakers worldwide (Latviešu Valoda, n.d.). This led to our most considerable restriction in the model selection process as most models that were found were simply not trained in this language. Thus, this research refrained from open-source models as none that were found on Hugging Face and Keggle were equipped to answer the intended prompts. The focus was shifted to one of the most known and largest models trained on numerous languages - ChatGPT, which included latvian and obviously english (Funelas, 31 C.E.). Further the explicit selection of using ChatGPT3.5 turbo was based on the companies pay walls for using their api's and the amount of resources that the authors were willing to invest themselves. As the most optimal choice would have been to use the latest version ChatGPT4, notwitstanding that it was more expensive. Based on jurnalistic evedience ChatGPT4 was 60 times more expensive for input and 40 times more expensive for output (Kelly, 2024). 
 
 The amount of resources also influenced the evaluation of the prompts. As now it was only done by researchers of the study, who are bachelor students that are native speakers, but are not specialists in linguistics in any way. Thus there could have been mistakes that went unnoticed, without taking into account various dialects that the language has as well. 
 
@@ -102,15 +106,15 @@ Another limitation was the amount of time that was allocated to this research as
 
 
 ### Solutions: Mitigating bias (300 words)
+The method that was used in this research : prompt probing, is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. A proposed way to resolve this is by using a combination of methods (Narain, 2023). 
 
-The method that was used in this research : pompt probing, is only useful to identify embedded linguistic properties, thus it is a surface-level analysis that misses propagated biases in the models and would be insufficient for causality analysis as it lacks the understanding of why and how biases occur. A propoded way to resolve this is by using a combination of methods (Narain, 2023). 
+[need to have the methods part fro this !!! ]
+Nonetheless, the method itself that is used to evaluate bias also can be influenced by biases of the method. A research that addresses this is "Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View" by Cao et al. They explained that prompt probing contains biases mainly based on the specific types of prompts, while also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
 
-[need to have the moethods part fro this !!! ]
-Nonetheless, the method istelf that is used to evaluate bises also can be influenced by biases of the method. A reasrch that address this is "Can Prompt Probe Pretrained Language Models? Understanding the Invisible Risks from a Causal View" by Cao et al. They explained that propmt probing contains biases mainly based in the specific types of prompts, with also emphasizing the uncertainty that this method has and that it often does not even represent testing knowledge-related tasks (Cao et al., 2022). 
+Another proposed way to mitigate negative impacts of prompt bias, specifically overfitting benchmarks and misleading language models, in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their findings this approach is able to rectify inflated benchmark performance while improving the retrieval capability of prompts. 
 
-Another proposed way to mitigate negative impacts of prompt bias, specifically overfiting benchmarks and misleading language models, in factual knowledge extraction is by using the representation vector of prompt-only querying (Xu et al., 2024). Based on their findings this approach is able to rectify infalted benchmark performance while improvng thr retrival capability of prompts. 
 
-## Conclusion (150 words)
+## Conclusion (is 175 words atm)
 This research had used a popular method to explore the biases in LLMS, specifically in ChatGPT3.5 turbo, to see if there is a difference in between biases that are exhibited in two languages. The results reflected that there is a “yes” bias in how these LLMs answer open queries. It is important to remember that this might not be the case for other models that are not trained for producing text. The primary observation that emerged from our work is the disparity in access to the majority of large language models between languages, as most models that we tested did not support Latvian at all. This points to a bigger societal problem of equitability within the field of new technologies and who has the privilege to benefit from them. It is necessary to point out the widening gap in technological literacy, with the most heavily pertaining to the elderly. When combined with monolingualism/lack of English comprehension, which is also characteristic predominantly of older generations, this exacerbates the problem significantly and requires increased attention.
 
 
