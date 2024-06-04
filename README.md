@@ -10,11 +10,9 @@ This research will address the stereotypical biases exhibited by one of the most
 
 
 #### Research questions 
-A list of research questions you would like to address during the project.  
 > To what extent does ChatGPT3.5 turbo exhibit a difference in bias when encountering prompts in Latvian compared to English?
 
 #### Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 + Prompts:
     + [Tamkin et al. (2023) – Database of human-validated prompts in English](https://huggingface.co/datasets/Anthropic/discrim-eval)
 
@@ -37,10 +35,10 @@ Add here a sketch of your planning for the coming weeks. Please mention who does
 additionally?
 - [x] code the report into Latex (Michalina)
 
-##### Author contributions to report:
-Mara: Abstract, introduction, theoretical background, discussion.
-Michalina: Abstract, introduction, methodology, conclusion
-Ralfs: Results, analysis and all the visual aids (plots)
+##### Author contributions to the report:
+* Mara: Abstract, introduction, theoretical background, discussion
+* Michalina: Abstract, introduction, methodology, conclusion
+* Ralfs: Results, analysis and all the visual aids (plots)
 
 
 
