@@ -24,18 +24,18 @@ List the dataset(s) you want to use, and some ideas on how do you expect to get,
 #### A tentative list of milestones for the project
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
 
-( [x] ) Explore current research + possible data sets (Mara) 
-( [x] ) Decide on a method (all)
-( [x] ) Find a study to base ourselves on an open-source data set (Michalina)
-( [x] ) Translate to Latvian with Google API (Ralfs)
-( [x] ) Do the model prompting with OpenAI API (Ralfs)
-( [x] ) Work on the report (Mara + Michalina)
-( [x] ) Documenting the steps along the way (all)
-( [x] ) Evaluation of obtained bias (Ralfs)
-( [x] ) Explanation/ summarizing the impact of bias in a report (all)
-( [x] ) Relation to our (main) research question(s) (all)
+- [x] Explore current research + possible data sets (Mara) 
+- [x] Decide on a method (all)
+- [x] Find a study to base ourselves on an open-source data set (Michalina)
+- [x] Translate to Latvian with Google API (Ralfs)
+- [x] Do the model prompting with OpenAI API (Ralfs)
+- [x] Work on the report (Mara + Michalina)
+- [x] Documenting the steps along the way (all)
+- [x] Evaluation of obtained bias (Ralfs)
+- [x] Explanation/ summarizing the impact of bias in a report (all)
+- [x] Relation to our (main) research question(s) (all)
 additionally?
-( [] ) code the report into Latex (Michalina)
+- [x] code the report into Latex (Michalina)
 
 ##### Author contributions to report:
 Mara: Abstract, introduction, theoretical background, discussion.
