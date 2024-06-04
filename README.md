@@ -12,34 +12,38 @@ This research will address the stereotypical biases exhibited by one of the most
 #### Research questions 
 A list of research questions you would like to address during the project.  
 
-    To what extent ChatGPT3.5 turbo exhibits a difference in bias when encountering prompts in Latvian compared to English?
+    To what extent does ChatGPT3.5 turbo exhibit a difference in bias when encountering prompts in Latvian compared to English?
 
 #### Dataset
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show you've read the docs and are familiar with some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
     
-    Propmts: 
-        From a study, that have theirs on Hugging Face 
+    Prompts: 
+    [Tamkin et al. (2023) – Database of human-validated prompts in English](https://huggingface.co/datasets/Anthropic/discrim-eval)
+        
 
     Large Language Model:  
-        ChatGPT3.5 turbo trough api 
+        ChatGPT3.5 Turbo 0125 (+OpenAI API tools)
 
 #### A tentative list of milestones for the project
 Add here a sketch of your planning for the coming weeks. Please mention who does what.
 
-    Explore current research + possible data sets (Mara) 
-    -> Decide on a statistical method + data set (all)
-    -> Translate to latvian (Ralfs)
+    -> Explore current research + possible data sets (Mara) 
+    -> Decide on a statistical method + data set (Michalina)
+    -> Translate to Latvian (Ralfs)
     -> Do the model prompting (Ralfs)
     -> Work on the report (Mara + Michalina)
     -> Documenting the steps along the way (all)
-    -> Evaluation of obtained bias (Mara)
-    -> Explanation/ summarizing the impact of bias in a report (Mara)
+    -> Evaluation of obtained bias (Ralfs)
+    -> Explanation/ summarizing the impact of bias in a report (all)
     -> Relation to our (main) research question(s) (all)
 
 ##### Author contributions to report:
-Mara: Abstract, introduction, theoretical background, discussion and conclusion. 
-Michalina: Methodology. 
-Ralfs: Results and anlaysis of results.
+Mara: Abstract, introduction, theoretical background, discussion.
+Michalina: Abstract, introduction, methodology, conclusion
+Ralfs: Results, analysis and all the visual aids (plots)
+
+
+
 
 
 #### Documentation
