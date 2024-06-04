@@ -30,20 +30,24 @@ We utilize the existing dataset of prompts developed by Tamkin et al. (2023), en
 This basis only consisted of prompts in English, as Tamkin et al. did not compare the results between other languages, therefore we needed to create the Latvian equivalent of each prompt. Ergo, they have been translated into grammatically accurate, semantically and syntactically analogous Latvian by using Google API, and then cross-evaluated by two native Latvian speakers to ensure a reliable and comparable translation. In order to achieve meaningful results, our experiment required a large volume of prompts, making it impossible to translate by hand. Futhermore, manual translation could give way to human error and inconsistency across prompts, therefore we have decided that Google API combined with manual validation would yield the most reliable results. The resulting dataset included 37800 prompts (18900 in English, 18900 in Latvian) covering a range of decision-making domains, both high-risk (like loan approvals, employment opportunities, and criminal justice) and low-risk (such as approving a merchandise return). The prompts are organized into separate files for explicit demographic information (such as "The patient is a 20-year-old Asian female suffering from (...)") and implicit signifiers ("Ling Kim is a 40-year-old person suffering from (...)"). We have also added an instruction at the end of each prompt, to only output a yes/no decision (with "yes" signifying the favourable outcome in each hypothetical scenario). 
 
 The primary algorithm used will be the built-in processing capabilities of Chat GPT-3.5 Turbo. We will not be modifying the internal algorithms of the model itself or tweaking the model since our goal of the experiment is to investigate bias in an already existing and deployed large language model. 
-Each prompt (English and Latvian) has been fed individually to a new session of ChatGPT 3.5 Turbo in order to prevent cross-influence of prompts in one session. In order to feed the prompts into the model we have used OpenAI's offered paid API service which granted us ability to automate the process.
-The results have been collected within a new column added to each JSON Lines files (containing the prompt dataset), and labelled as "answer". That column was then transformed into binary notation (1-positive answer, 0-negative answer, 2-for unclear, ambiguous outputs) in column labelled "bool" in order to streamline the further calculations. 
+Each prompt (English and Latvian) has been fed individually to a new session of ChatGPT 3.5 Turbo in order to prevent the cross-influence of prompts in one session. In order to feed the prompts into the model we have used OpenAI's offered paid API service which granted us the ability to automate the process.
+The results have been collected within a new column added to each JSON Lines file (containing the prompt dataset), and labelled as "answer". That column was then transformed into binary notation (1-positive answer, 0-negative answer, 2-for unclear, ambiguous outputs) in a column labelled "bool" in order to streamline the further calculations. 
 
 
 ### Analysis of the results
-In order to interpret the results we will calculate a discrimination score metric, as outlined in the original study. 
+In order to interpret the results we will calculate a discrimination score metric, as outlined in the original study. This score quantifies the degree of bias exhibited by the model's decisions based on demographic variations within the prompts. For that, it is necessary to establish a reference point with which to compare how different demographic profiles are treated. Tamkin et al. (2023) used a 60-year-old white male as the baseline "applicant" in their study, due to historical privilege, and we decided to follow such a choice for the sake of comparability. For each demographic variation within a prompt, we will calculate two key differences – 
++ Positive Decision Difference (P_pos(+)) – the extent to which applicants of a specific demographic are more likely (positive difference) or less likely (negative difference) to receive a "yes" outcome compared to the baseline applicant.
++ Negative Decision Difference (P_neg(+)) - equivalent as above, for a "no" outcome.
+The discrimination score for a specific demographic attribute within a prompt is calculated as the average of the two aforementioned differences:
+$ D = (|logit[pnorm(yes)_+] - logit[pnorm(yes)_-]| + |P_neg(+) - P_neg(-)|) / 2 $
+where:
+* D = Discrimination score
+* $logit[pnorm(yes)_+]$ = Logit transformed probability of a positive decision for applicants with the demographic attribute
+* $logit[pnorm(yes)_-]$ = Logit transformed probability of a positive decision for the baseline applicant
+* $P_neg(+)$ = Negative decision rate for applicants with the demographic attribute
+* $P_neg(-)$ = Negative decision rate for the baseline applicant
 
-The model's outputs will be analyzed using the discrimination score metric outlined by Tamkin et al. (2023). This score quantifies the degree of bias exhibited by the model's decisions based on demographic variations within the prompts.
-
-After collecting the outputs in a new column added to the database, we will employ the mixed effects model, as outlined in the original study, or, alternatively a simplified version consisting of the average difference in logit transformed probability of a positive decision between advantaged and disadvantaged groups for each prompt.
-Finally, we will  determine if there is a statistically significant difference in the level of bias exhibited by the model across languages.
-
-
-
+The logit function transforms probabilities (between 0 and 1) into a more interpretable scale, and thus improves the normality of the data for statistical analysis. 
 
 
 ## Results 
