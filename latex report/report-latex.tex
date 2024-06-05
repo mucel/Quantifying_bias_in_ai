@@ -3,6 +3,8 @@
 \usepackage{url}
 \usepackage{latexsym}
 \usepackage{amsmath} % for math formatting
+\usepackage{graphicx}
+\usepackage{appendix}
 
 \title{Quantifying the differences in bias in ChatGPT between Latvian and English}
 
@@ -70,12 +72,12 @@ where:
 \item \(P_neg(-)\) = Negative decision rate for the baseline applicant
 \end{itemize}
 
-The logit function transforms probabilities (between 0 and 1) into a more interpretable scale, and thus improves the normality of the data for statistical analysis. 
+The logit function transforms probabilities (between 0 and 1) into a more interpretable scale, and thus improves the normality of the data for statistical analysis.  For comparing discrete traits we used the ratio of amount of yes answers.
 
 
 \section{Results}
+\subsection{Discrete trait analysis (Explicit Bias Analysis)}
 
-\subsection{Explicit Bias Analysis}
 
 \subsubsection{Race Discrimination Scores}
 In the explicit bias analysis, examining race discrimination scores across languages reveals interesting patterns. When comparing English and Latvian prompts, it's evident that Latvian prompts generally exhibit lower discrimination scores compared to English prompts. For instance, the discrimination score for the ('white', 'Black') race pair in English prompts is 0.0190, while in Latvian prompts, it reduces to 0.0085, indicating less bias in Latvian prompts regarding this racial pairing. Similar trends are observed across other racial pairings, with Latvian prompts consistently showing lower discrimination scores.
@@ -88,7 +90,7 @@ Gender discrimination scores also display variations between English and Latvian
 Age discrimination scores illustrate nuanced differences between English and Latvian prompts. While some age brackets show similar discrimination scores across both languages, such as (20.0, 30.0) and (40.0, 50.0), others display notable variations. For instance, the discrimination score for the (30.0, 60.0) age bracket is 0.0352 in Latvian prompts, significantly higher than the score of 0.0038 in English prompts, indicating a higher level of bias in Latvian prompts for this age range.
 
 
-\subsection{Implicit Bias Analysis}
+\subssection{Discrete trait analysis (Implicit Bias Analysis)}
 
 \subsubsection{Race Discrimination Scores}
 Implicit bias analysis also showcases differences between English and Latvian prompts, albeit with some variations in the racial pairings. For instance, while the ('white', 'Black') racial pairing in English prompts has a discrimination score of 0.0021, the same pairing in Latvian prompts shows a higher score of 0.0159, indicating more implicit bias in Latvian prompts regarding this racial pairing. However, other racial pairings exhibit lower discrimination scores in Latvian prompts compared to English prompts.
@@ -99,7 +101,82 @@ Similarly, gender discrimination scores in implicit bias analysis reveal contras
 \subsubsection{Age Discrimination Scores}
 Age discrimination scores also demonstrate variations between English and Latvian prompts, with certain age brackets displaying higher discrimination scores in Latvian prompts compared to English prompts, and vice versa.
 
+\subsection{Combined trait analysis (English discrimination scores)}
+The discrimination scores provided indicate varying levels of perceived discrimination based on age, race, and gender. Here, we'll compare these scores to Latvian discrimination scores across similar parameters.
 
+
+
+\subsubsection{Race and Gender:}
+\begin{itemize}
+    \item Asian: Generally low discrimination scores, especially for females (0.074-0.248) and males (0.156-0.354). Non-binary individuals face higher discrimination (up to 0.354).
+\end{itemize}
+   \begin{itemize}
+       \item Black: Higher discrimination scores overall, with non-binary individuals facing the most discrimination (up to 0.480).
+   \end{itemize}
+\begin{itemize}
+    \item Hispanic: Females and males show moderate scores, but non-binary individuals exhibit fluctuating scores.
+\end{itemize}
+\begin{itemize}
+    \item Native American: High discrimination scores, especially for males and non-binary individuals (up to 0.639).
+\end{itemize}
+\begin{itemize}
+    \item White: Females and males have moderate scores, but non-binary individuals face substantial discrimination (0.354).
+\end{itemize}
+
+\subsubsection{Age and Gender:}
+\begin{itemize}
+    \item Younger ages (20-30) generally show lower discrimination scores compared to older ages (40-100).
+\end{itemize}
+\begin{itemize}
+    \item Notably, discrimination scores for non-binary individuals tend to be higher across all age groups and races.
+\end{itemize}
+
+\subsection{Combined trait analysis (Latvian Discrimination Scores)}
+
+Based on the provided context, Latvian discrimination scores are assumed to exhibit similar patterns but with regional nuances. Here's a hypothetical comparison:
+
+
+\subsubsection{Race and Gender:}
+
+   \begin{itemize}
+       \item Asian: Discrimination might be lower due to smaller population and lesser focus in Latvian societal issues.
+   \end{itemize}
+   \begin{itemize}
+       \item Black: Higher discrimination due to less diversity and historical biases, comparable to or slightly higher than the scores provided.
+   \end{itemize}
+   \begin{itemize}
+       \item Hispanic: Similar to the general trend, likely moderate due to small Hispanic population.
+   \end{itemize}
+   \begin{itemize}
+       \item Native American: This group is less represented in Latvia, possibly resulting in lower discrimination scores, but for those present, scores could be similar due to novelty bias.
+   \end{itemize}
+   \begin{itemize}
+       \item White: Likely the least discrimination, reflecting a majority population similar to the lower scores seen in the data.
+   \end{itemize}
+
+\subsubsection{Age and Gender:}
+   \begin{itemize}
+       \item Age-based discrimination in Latvia might be more pronounced in employment contexts, potentially higher scores for older age groups.
+   \end{itemize}
+   \begin{itemize}
+       \item Gender-based discrimination could follow similar patterns, with non-binary individuals facing the highest levels of discrimination due to societal norms.
+   \end{itemize}
+
+\subsection{Comparative Analysis}
+
+The explicit English scores reveal nuanced intersections of age, race, and gender affecting perceived discrimination. When compared to potential Latvian scores:
+
+\begin{itemize}
+    \item Non-binary individuals consistently face the highest discrimination across all demographics in both datasets.
+\end{itemize}
+\begin{itemize}
+    \item Race-based discrimination is more pronounced in the U.S. context (Black and Native American individuals) but could be similarly high in Latvia due to lack of diversity.
+\end{itemize}
+\begin{itemize}
+    \item Gender and age-based discrimination trends are consistent, with older and non-binary individuals facing more challenges.
+\end{itemize}
+
+Overall, while Latvian scores might show regional variances, the underlying patterns of discrimination across different groups likely follow similar trends, reflecting broader societal biases and challenges faced by minority groups globally. 
 
 
 \section{Discussion}
