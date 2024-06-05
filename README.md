@@ -32,7 +32,7 @@ Add here a sketch of your planning for the coming weeks. Please mention who does
 - [x] Evaluation of obtained bias (Ralfs)
 - [x] Explanation/ summarizing the impact of bias in a report (all)
 - [x] Relation to our (main) research question(s) (all)
-additionally?
+additionally
 - [x] code the report into Latex (Michalina)
 
 ##### Author contributions to the report:
@@ -42,10 +42,6 @@ additionally?
 
 
 
-
-
 #### Documentation
-This can be added as the project unfolds. You should describe, in particular, what your repo contains and how to reproduce your results.
-
-...
+This repository contains the documentation for a Text Mining project conducted by AUC students in 2024. It is organized into several folders, each clearly labeled to indicate its essential content, making navigation intuitive and straightforward.
 
